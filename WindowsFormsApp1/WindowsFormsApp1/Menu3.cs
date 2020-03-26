@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Menu : Form
+    public partial class Menu3 : Form
     {
-        public Menu()
+        public Menu3()
         {
             InitializeComponent();
         }
@@ -22,15 +22,10 @@ namespace WindowsFormsApp1
             System.Windows.Forms.Application.Exit();
         }
 
-        private void uxJobs_Click(object sender, EventArgs e)
+        private void uxView_Click(object sender, EventArgs e)
         {
-            Assign a1 = new Assign();
-            a1.Show();
-        }
-
-        private void uxLogs_Click(object sender, EventArgs e)
-        {
-
+            Information i = new Information();
+            i.Show();
         }
     }
 }

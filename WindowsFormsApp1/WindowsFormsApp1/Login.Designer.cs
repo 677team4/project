@@ -36,15 +36,17 @@
             this.uxPassword = new System.Windows.Forms.TextBox();
             this.uxLogin = new System.Windows.Forms.Button();
             this.uxExit = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.databaseDataSet1 = new WindowsFormsApp1.databaseDataSet1();
             this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet1 = new WindowsFormsApp1.databaseDataSet1();
             this.loginTableAdapter = new WindowsFormsApp1.databaseDataSet1TableAdapters.loginTableAdapter();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).BeginInit();
+            this.assignment23DataSet = new WindowsFormsApp1.Assignment23DataSet();
+            this.loginBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.loginTableAdapter1 = new WindowsFormsApp1.Assignment23DataSetTableAdapters.LoginTableAdapter();
+            this.tableAdapterManager = new WindowsFormsApp1.Assignment23DataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // uxWildcat
@@ -114,58 +116,46 @@
             this.uxExit.UseVisualStyleBackColor = true;
             this.uxExit.Click += new System.EventHandler(this.uxExit_Click);
             // 
-            // dataGridView1
+            // loginBindingSource
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.usernameDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.loginBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(857, 144);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 7;
+            this.loginBindingSource.DataMember = "login";
+            this.loginBindingSource.DataSource = this.databaseDataSet1;
             // 
             // databaseDataSet1
             // 
             this.databaseDataSet1.DataSetName = "databaseDataSet1";
             this.databaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // loginBindingSource
-            // 
-            this.loginBindingSource.DataMember = "login";
-            this.loginBindingSource.DataSource = this.databaseDataSet1;
-            // 
             // loginTableAdapter
             // 
             this.loginTableAdapter.ClearBeforeFill = true;
             // 
-            // usernameDataGridViewTextBoxColumn
+            // assignment23DataSet
             // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
-            this.usernameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            this.usernameDataGridViewTextBoxColumn.Width = 125;
+            this.assignment23DataSet.DataSetName = "Assignment23DataSet";
+            this.assignment23DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // passwordDataGridViewTextBoxColumn
+            // loginBindingSource1
             // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.Width = 125;
+            this.loginBindingSource1.DataMember = "Login";
+            this.loginBindingSource1.DataSource = this.assignment23DataSet;
+            // 
+            // loginTableAdapter1
+            // 
+            this.loginTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.LoginTableAdapter = this.loginTableAdapter1;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.Assignment23DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Fuchsia;
-            this.ClientSize = new System.Drawing.Size(814, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(861, 450);
             this.Controls.Add(this.uxExit);
             this.Controls.Add(this.uxLogin);
             this.Controls.Add(this.uxPassword);
@@ -179,9 +169,10 @@
             this.Name = "Login";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,12 +187,13 @@
         private System.Windows.Forms.TextBox uxPassword;
         private System.Windows.Forms.Button uxLogin;
         private System.Windows.Forms.Button uxExit;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private databaseDataSet1 databaseDataSet1;
         private System.Windows.Forms.BindingSource loginBindingSource;
         private databaseDataSet1TableAdapters.loginTableAdapter loginTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
+        private Assignment23DataSet assignment23DataSet;
+        private System.Windows.Forms.BindingSource loginBindingSource1;
+        private Assignment23DataSetTableAdapters.LoginTableAdapter loginTableAdapter1;
+        private Assignment23DataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
 

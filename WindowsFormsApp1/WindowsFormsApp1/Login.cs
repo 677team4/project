@@ -17,25 +17,20 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private bool CheckPass(string p)
+        private bool Check(string u, string p)
         {
-            for(int i = 0; i < dataGridView1.Rows.Count; i++)
+            for (int i = 0; i < assignment23DataSet.Tables["Login"].Rows.Count; i++)
             {
-                if(p == dataGridView1.Rows[i].Text)
+                for (int j = 0; j < assignment23DataSet.Tables["Login"].Columns.Count; j++)
                 {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        private bool CheckUser(string u)
-        {
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            {
-                if (p == dataGridView1.Rows[i].Text)
-                {
-                    return true;
+                    Object o = assignment23DataSet.Tables["Login"].Rows[i][j];
+                    String sqluser = o.ToString();
+                    Object ob = assignment23DataSet.Tables["Login"].Rows[i][j];
+                    String sqlpass = ob.ToString();
+                    if (sqluser == u && sqlpass == p)
+                    {
+                        return true;
+                    }
                 }
             }
             return false;
@@ -44,13 +39,26 @@ namespace WindowsFormsApp1
         private void uxLogin_Click(object sender, EventArgs e)
         {
             //Check User and Pass
-            bool user= CheckUser(uxLogin.Text);
-            bool pass = CheckPass(uxPassword.Text);
-            if(user == true && pass == true)
+            bool check = Check(uxUsername.Text, uxPassword.Text);
+            if(check == true)
             {
+                this.Hide();
                 MessageBox.Show("Login Successful!");
-                Menu m1 = new Menu();
-                m1.Show();
+                if (uxUsername.Text == "Manager")
+                {
+                    Menu m1 = new Menu();
+                    m1.Show();
+                }
+                else if (uxUsername.Text == "Welder")
+                {
+                    Menu2 m2 = new Menu2();
+                    m2.Show();
+                }
+                else if (uxUsername.Text == "Inspector")
+                {
+                    Menu3 m3 = new Menu3();
+                    m3.Show();
+                }
             }
             else
             {
@@ -65,6 +73,8 @@ namespace WindowsFormsApp1
 
         private void Login_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'assignment23DataSet.Login' table. You can move, or remove it, as needed.
+            this.loginTableAdapter1.Fill(this.assignment23DataSet.Login);
             // TODO: This line of code loads data into the 'databaseDataSet1.login' table. You can move, or remove it, as needed.
             this.loginTableAdapter.Fill(this.databaseDataSet1.login);
 
