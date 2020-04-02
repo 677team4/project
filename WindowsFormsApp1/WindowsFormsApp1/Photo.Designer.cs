@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uxUpload = new System.Windows.Forms.Button();
-            this.uxBack = new System.Windows.Forms.Button();
+            this.uxView = new System.Windows.Forms.Button();
+            this.uxExit = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.uxUpload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,28 +45,38 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // uxUpload
+            // uxView
             // 
-            this.uxUpload.Location = new System.Drawing.Point(541, 365);
-            this.uxUpload.Name = "uxUpload";
-            this.uxUpload.Size = new System.Drawing.Size(173, 51);
-            this.uxUpload.TabIndex = 1;
-            this.uxUpload.Text = "Upload Weld Photo";
-            this.uxUpload.UseVisualStyleBackColor = true;
-            this.uxUpload.Click += new System.EventHandler(this.uxUpload_Click);
+            this.uxView.Location = new System.Drawing.Point(541, 365);
+            this.uxView.Name = "uxView";
+            this.uxView.Size = new System.Drawing.Size(173, 51);
+            this.uxView.TabIndex = 1;
+            this.uxView.Text = "View Weld Photo";
+            this.uxView.UseVisualStyleBackColor = true;
+            this.uxView.Click += new System.EventHandler(this.uxView_Click);
             // 
-            // uxBack
+            // uxExit
             // 
-            this.uxBack.Location = new System.Drawing.Point(54, 365);
-            this.uxBack.Name = "uxBack";
-            this.uxBack.Size = new System.Drawing.Size(173, 51);
-            this.uxBack.TabIndex = 2;
-            this.uxBack.Text = "Go Back";
-            this.uxBack.UseVisualStyleBackColor = true;
+            this.uxExit.Location = new System.Drawing.Point(54, 365);
+            this.uxExit.Name = "uxExit";
+            this.uxExit.Size = new System.Drawing.Size(173, 51);
+            this.uxExit.TabIndex = 2;
+            this.uxExit.Text = "Exit";
+            this.uxExit.UseVisualStyleBackColor = true;
+            this.uxExit.Click += new System.EventHandler(this.uxExit_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // uxUpload
+            // 
+            this.uxUpload.Location = new System.Drawing.Point(300, 365);
+            this.uxUpload.Name = "uxUpload";
+            this.uxUpload.Size = new System.Drawing.Size(173, 51);
+            this.uxUpload.TabIndex = 3;
+            this.uxUpload.Text = "Upload to Database";
+            this.uxUpload.UseVisualStyleBackColor = true;
             // 
             // Photo
             // 
@@ -73,8 +84,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Fuchsia;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.uxBack);
             this.Controls.Add(this.uxUpload);
+            this.Controls.Add(this.uxExit);
+            this.Controls.Add(this.uxView);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Photo";
@@ -87,8 +99,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button uxUpload;
-        private System.Windows.Forms.Button uxBack;
+        private System.Windows.Forms.Button uxView;
+        private System.Windows.Forms.Button uxExit;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button uxUpload;
     }
 }

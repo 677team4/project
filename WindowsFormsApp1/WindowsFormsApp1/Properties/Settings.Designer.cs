@@ -43,5 +43,16 @@ namespace WindowsFormsApp1.Properties {
                 return ((string)(this["Assignment23ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-ACVUMLR\\SQLEXPRESS;Initial Catalog=Project;Integrated Securit" +
+            "y=True")]
+        public string ProjectConnectionString {
+            get {
+                return ((string)(this["ProjectConnectionString"]));
+            }
+        }
     }
 }

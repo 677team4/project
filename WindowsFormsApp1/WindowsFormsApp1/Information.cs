@@ -22,5 +22,25 @@ namespace WindowsFormsApp1
             Photo p1 = new Photo();
             p1.Show();
         }
+
+        private void logsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.logsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.assignment23DataSet);
+
+        }
+
+        private void Information_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'assignment23DataSet.Logs' table. You can move, or remove it, as needed.
+            this.logsTableAdapter.Fill(this.assignment23DataSet.Logs);
+
+        }
+
+        private void uxExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

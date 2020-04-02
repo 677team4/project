@@ -30,7 +30,8 @@ namespace WindowsFormsApp1
 
         private void uxLogs_Click(object sender, EventArgs e)
         {
-
+            Logs l = new Logs();
+            l.Show();
         }
     }
 }

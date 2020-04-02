@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void uxUpload_Click(object sender, EventArgs e)
+        private void uxView_Click(object sender, EventArgs e)
         {
             OpenFileDialog opnfd = new OpenFileDialog();
             opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
@@ -25,6 +25,11 @@ namespace WindowsFormsApp1
             {
                 pictureBox1.Image = new Bitmap(opnfd.FileName);
             }
+        }
+
+        private void uxExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -16,5 +16,25 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void logsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.logsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.projectDataSet);
+
+        }
+
+        private void Logs_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'assignment23DataSet.Logs' table. You can move, or remove it, as needed.
+            this.logsTableAdapter1.Fill(this.assignment23DataSet.Logs);
+
+        }
+
+        private void uxExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
