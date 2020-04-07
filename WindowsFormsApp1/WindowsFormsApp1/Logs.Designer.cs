@@ -80,9 +80,10 @@
             // 
             // uxExit
             // 
-            this.uxExit.Location = new System.Drawing.Point(477, 408);
+            this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxExit.Location = new System.Drawing.Point(495, 403);
             this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(234, 71);
+            this.uxExit.Size = new System.Drawing.Size(148, 71);
             this.uxExit.TabIndex = 2;
             this.uxExit.Text = "Exit";
             this.uxExit.UseVisualStyleBackColor = true;
@@ -202,8 +203,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Fuchsia;
-            this.ClientSize = new System.Drawing.Size(1218, 499);
+            this.BackColor = System.Drawing.Color.MediumPurple;
+            this.ClientSize = new System.Drawing.Size(1139, 499);
             this.Controls.Add(this.logsDataGridView);
             this.Controls.Add(this.uxExit);
             this.Name = "Logs";

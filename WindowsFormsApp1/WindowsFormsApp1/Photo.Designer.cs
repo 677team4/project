@@ -47,6 +47,7 @@
             // 
             // uxView
             // 
+            this.uxView.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxView.Location = new System.Drawing.Point(541, 365);
             this.uxView.Name = "uxView";
             this.uxView.Size = new System.Drawing.Size(173, 51);
@@ -57,6 +58,7 @@
             // 
             // uxExit
             // 
+            this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxExit.Location = new System.Drawing.Point(54, 365);
             this.uxExit.Name = "uxExit";
             this.uxExit.Size = new System.Drawing.Size(173, 51);
@@ -71,6 +73,7 @@
             // 
             // uxUpload
             // 
+            this.uxUpload.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxUpload.Location = new System.Drawing.Point(300, 365);
             this.uxUpload.Name = "uxUpload";
             this.uxUpload.Size = new System.Drawing.Size(173, 51);
@@ -82,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Fuchsia;
+            this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.uxUpload);
             this.Controls.Add(this.uxExit);

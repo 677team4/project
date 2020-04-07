@@ -37,18 +37,19 @@
             // uxManager
             // 
             this.uxManager.AutoSize = true;
-            this.uxManager.Font = new System.Drawing.Font("Algerian", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxManager.Location = new System.Drawing.Point(166, 7);
+            this.uxManager.Font = new System.Drawing.Font("BDP Birgula", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxManager.Location = new System.Drawing.Point(101, 58);
             this.uxManager.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxManager.Name = "uxManager";
-            this.uxManager.Size = new System.Drawing.Size(283, 60);
+            this.uxManager.Size = new System.Drawing.Size(269, 71);
             this.uxManager.TabIndex = 1;
             this.uxManager.Text = "Manager";
             // 
             // uxExit
             // 
-            this.uxExit.Location = new System.Drawing.Point(235, 300);
-            this.uxExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxExit.Location = new System.Drawing.Point(176, 244);
+            this.uxExit.Margin = new System.Windows.Forms.Padding(2);
             this.uxExit.Name = "uxExit";
             this.uxExit.Size = new System.Drawing.Size(130, 56);
             this.uxExit.TabIndex = 2;
@@ -58,8 +59,9 @@
             // 
             // uxJobs
             // 
-            this.uxJobs.Location = new System.Drawing.Point(235, 96);
-            this.uxJobs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxJobs.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxJobs.Location = new System.Drawing.Point(104, 164);
+            this.uxJobs.Margin = new System.Windows.Forms.Padding(2);
             this.uxJobs.Name = "uxJobs";
             this.uxJobs.Size = new System.Drawing.Size(130, 56);
             this.uxJobs.TabIndex = 3;
@@ -69,8 +71,9 @@
             // 
             // uxLogs
             // 
-            this.uxLogs.Location = new System.Drawing.Point(235, 195);
-            this.uxLogs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxLogs.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxLogs.Location = new System.Drawing.Point(247, 164);
+            this.uxLogs.Margin = new System.Windows.Forms.Padding(2);
             this.uxLogs.Name = "uxLogs";
             this.uxLogs.Size = new System.Drawing.Size(130, 56);
             this.uxLogs.TabIndex = 4;
@@ -82,15 +85,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Fuchsia;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.BackColor = System.Drawing.Color.MediumPurple;
+            this.ClientSize = new System.Drawing.Size(471, 377);
             this.Controls.Add(this.uxLogs);
             this.Controls.Add(this.uxJobs);
             this.Controls.Add(this.uxExit);
             this.Controls.Add(this.uxManager);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu";
-            this.Text = "Menu";
+            this.Text = "Manager Menu";
             this.ResumeLayout(false);
             this.PerformLayout();
 

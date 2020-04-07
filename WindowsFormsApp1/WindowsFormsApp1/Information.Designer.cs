@@ -70,7 +70,8 @@
             // 
             // uxPhoto
             // 
-            this.uxPhoto.Location = new System.Drawing.Point(367, 326);
+            this.uxPhoto.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxPhoto.Location = new System.Drawing.Point(287, 348);
             this.uxPhoto.Name = "uxPhoto";
             this.uxPhoto.Size = new System.Drawing.Size(126, 51);
             this.uxPhoto.TabIndex = 0;
@@ -80,7 +81,8 @@
             // 
             // uxExit
             // 
-            this.uxExit.Location = new System.Drawing.Point(128, 326);
+            this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxExit.Location = new System.Drawing.Point(71, 348);
             this.uxExit.Name = "uxExit";
             this.uxExit.Size = new System.Drawing.Size(126, 51);
             this.uxExit.TabIndex = 1;
@@ -136,7 +138,7 @@
             this.logsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.logsBindingNavigator.Name = "logsBindingNavigator";
             this.logsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.logsBindingNavigator.Size = new System.Drawing.Size(638, 25);
+            this.logsBindingNavigator.Size = new System.Drawing.Size(506, 25);
             this.logsBindingNavigator.TabIndex = 2;
             this.logsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -252,9 +254,9 @@
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
             this.logsDataGridView.DataSource = this.logsBindingSource;
-            this.logsDataGridView.Location = new System.Drawing.Point(128, 56);
+            this.logsDataGridView.Location = new System.Drawing.Point(71, 78);
             this.logsDataGridView.Name = "logsDataGridView";
-            this.logsDataGridView.Size = new System.Drawing.Size(365, 220);
+            this.logsDataGridView.Size = new System.Drawing.Size(342, 220);
             this.logsDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -327,8 +329,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Fuchsia;
-            this.ClientSize = new System.Drawing.Size(638, 409);
+            this.BackColor = System.Drawing.Color.MediumPurple;
+            this.ClientSize = new System.Drawing.Size(506, 460);
             this.Controls.Add(this.logsDataGridView);
             this.Controls.Add(this.logsBindingNavigator);
             this.Controls.Add(this.uxExit);

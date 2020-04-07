@@ -52,55 +52,62 @@
             // uxWildcat
             // 
             this.uxWildcat.AutoSize = true;
-            this.uxWildcat.Font = new System.Drawing.Font("Algerian", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxWildcat.Location = new System.Drawing.Point(78, 9);
+            this.uxWildcat.Font = new System.Drawing.Font("BDP Birgula", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxWildcat.Location = new System.Drawing.Point(103, 43);
+            this.uxWildcat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxWildcat.Name = "uxWildcat";
-            this.uxWildcat.Size = new System.Drawing.Size(645, 75);
+            this.uxWildcat.Size = new System.Drawing.Size(445, 71);
             this.uxWildcat.TabIndex = 0;
             this.uxWildcat.Text = "Wildcat Refinery";
             // 
             // uxUser
             // 
             this.uxUser.AutoSize = true;
-            this.uxUser.Font = new System.Drawing.Font("Algerian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxUser.Location = new System.Drawing.Point(110, 169);
+            this.uxUser.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxUser.Location = new System.Drawing.Point(106, 138);
+            this.uxUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxUser.Name = "uxUser";
-            this.uxUser.Size = new System.Drawing.Size(141, 28);
+            this.uxUser.Size = new System.Drawing.Size(100, 24);
             this.uxUser.TabIndex = 1;
-            this.uxUser.Text = "Username";
+            this.uxUser.Text = "Username:";
             // 
             // uxPass
             // 
             this.uxPass.AutoSize = true;
-            this.uxPass.Font = new System.Drawing.Font("Algerian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPass.Location = new System.Drawing.Point(110, 254);
+            this.uxPass.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxPass.Location = new System.Drawing.Point(106, 207);
+            this.uxPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxPass.Name = "uxPass";
-            this.uxPass.Size = new System.Drawing.Size(141, 28);
+            this.uxPass.Size = new System.Drawing.Size(94, 24);
             this.uxPass.TabIndex = 2;
-            this.uxPass.Text = "Password";
+            this.uxPass.Text = "Password:";
             // 
             // uxUsername
             // 
             this.uxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxUsername.Location = new System.Drawing.Point(277, 164);
+            this.uxUsername.Location = new System.Drawing.Point(232, 134);
+            this.uxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.uxUsername.Name = "uxUsername";
-            this.uxUsername.Size = new System.Drawing.Size(414, 36);
+            this.uxUsername.Size = new System.Drawing.Size(312, 30);
             this.uxUsername.TabIndex = 3;
             // 
             // uxPassword
             // 
             this.uxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPassword.Location = new System.Drawing.Point(277, 249);
+            this.uxPassword.Location = new System.Drawing.Point(232, 203);
+            this.uxPassword.Margin = new System.Windows.Forms.Padding(2);
             this.uxPassword.Name = "uxPassword";
             this.uxPassword.PasswordChar = '*';
-            this.uxPassword.Size = new System.Drawing.Size(414, 36);
+            this.uxPassword.Size = new System.Drawing.Size(312, 30);
             this.uxPassword.TabIndex = 4;
             // 
             // uxLogin
             // 
-            this.uxLogin.Location = new System.Drawing.Point(517, 336);
+            this.uxLogin.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxLogin.Location = new System.Drawing.Point(155, 288);
+            this.uxLogin.Margin = new System.Windows.Forms.Padding(2);
             this.uxLogin.Name = "uxLogin";
-            this.uxLogin.Size = new System.Drawing.Size(174, 64);
+            this.uxLogin.Size = new System.Drawing.Size(130, 52);
             this.uxLogin.TabIndex = 5;
             this.uxLogin.Text = "Login";
             this.uxLogin.UseVisualStyleBackColor = true;
@@ -108,9 +115,11 @@
             // 
             // uxExit
             // 
-            this.uxExit.Location = new System.Drawing.Point(115, 336);
+            this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxExit.Location = new System.Drawing.Point(365, 288);
+            this.uxExit.Margin = new System.Windows.Forms.Padding(2);
             this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(174, 64);
+            this.uxExit.Size = new System.Drawing.Size(130, 52);
             this.uxExit.TabIndex = 6;
             this.uxExit.Text = "Exit";
             this.uxExit.UseVisualStyleBackColor = true;
@@ -147,15 +156,17 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Login1TableAdapter = null;
             this.tableAdapterManager.LoginTableAdapter = this.loginTableAdapter1;
+            this.tableAdapterManager.LogsTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.Assignment23DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Fuchsia;
-            this.ClientSize = new System.Drawing.Size(861, 450);
+            this.BackColor = System.Drawing.Color.MediumPurple;
+            this.ClientSize = new System.Drawing.Size(651, 385);
             this.Controls.Add(this.uxExit);
             this.Controls.Add(this.uxLogin);
             this.Controls.Add(this.uxPassword);
@@ -164,10 +175,11 @@
             this.Controls.Add(this.uxUser);
             this.Controls.Add(this.uxWildcat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).EndInit();
