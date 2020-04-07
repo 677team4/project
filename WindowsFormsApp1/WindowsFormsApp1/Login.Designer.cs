@@ -52,11 +52,11 @@
             // uxWildcat
             // 
             this.uxWildcat.AutoSize = true;
-            this.uxWildcat.Font = new System.Drawing.Font("BDP Birgula", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxWildcat.Location = new System.Drawing.Point(103, 43);
+            this.uxWildcat.Font = new System.Drawing.Font("Baskerville Old Face", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxWildcat.Location = new System.Drawing.Point(123, 44);
             this.uxWildcat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxWildcat.Name = "uxWildcat";
-            this.uxWildcat.Size = new System.Drawing.Size(445, 71);
+            this.uxWildcat.Size = new System.Drawing.Size(399, 62);
             this.uxWildcat.TabIndex = 0;
             this.uxWildcat.Text = "Wildcat Refinery";
             // 

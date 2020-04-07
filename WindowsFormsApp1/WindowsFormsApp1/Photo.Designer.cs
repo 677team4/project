@@ -63,7 +63,7 @@
             this.uxExit.Name = "uxExit";
             this.uxExit.Size = new System.Drawing.Size(173, 51);
             this.uxExit.TabIndex = 2;
-            this.uxExit.Text = "Exit";
+            this.uxExit.Text = "Logout";
             this.uxExit.UseVisualStyleBackColor = true;
             this.uxExit.Click += new System.EventHandler(this.uxExit_Click);
             // 

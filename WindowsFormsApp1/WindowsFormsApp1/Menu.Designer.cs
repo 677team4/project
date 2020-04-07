@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.uxManager = new System.Windows.Forms.Label();
-            this.uxExit = new System.Windows.Forms.Button();
+            this.uxLogout = new System.Windows.Forms.Button();
             this.uxJobs = new System.Windows.Forms.Button();
             this.uxLogs = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -37,25 +37,25 @@
             // uxManager
             // 
             this.uxManager.AutoSize = true;
-            this.uxManager.Font = new System.Drawing.Font("BDP Birgula", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxManager.Location = new System.Drawing.Point(101, 58);
+            this.uxManager.Font = new System.Drawing.Font("Baskerville Old Face", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxManager.Location = new System.Drawing.Point(119, 60);
             this.uxManager.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxManager.Name = "uxManager";
-            this.uxManager.Size = new System.Drawing.Size(269, 71);
+            this.uxManager.Size = new System.Drawing.Size(218, 62);
             this.uxManager.TabIndex = 1;
             this.uxManager.Text = "Manager";
             // 
-            // uxExit
+            // uxLogout
             // 
-            this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExit.Location = new System.Drawing.Point(176, 244);
-            this.uxExit.Margin = new System.Windows.Forms.Padding(2);
-            this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(130, 56);
-            this.uxExit.TabIndex = 2;
-            this.uxExit.Text = "Exit";
-            this.uxExit.UseVisualStyleBackColor = true;
-            this.uxExit.Click += new System.EventHandler(this.uxExit_Click);
+            this.uxLogout.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxLogout.Location = new System.Drawing.Point(176, 244);
+            this.uxLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.uxLogout.Name = "uxLogout";
+            this.uxLogout.Size = new System.Drawing.Size(130, 56);
+            this.uxLogout.TabIndex = 2;
+            this.uxLogout.Text = "Logout";
+            this.uxLogout.UseVisualStyleBackColor = true;
+            this.uxLogout.Click += new System.EventHandler(this.uxExit_Click);
             // 
             // uxJobs
             // 
@@ -89,7 +89,7 @@
             this.ClientSize = new System.Drawing.Size(471, 377);
             this.Controls.Add(this.uxLogs);
             this.Controls.Add(this.uxJobs);
-            this.Controls.Add(this.uxExit);
+            this.Controls.Add(this.uxLogout);
             this.Controls.Add(this.uxManager);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu";
@@ -102,7 +102,7 @@
         #endregion
 
         private System.Windows.Forms.Label uxManager;
-        private System.Windows.Forms.Button uxExit;
+        private System.Windows.Forms.Button uxLogout;
         private System.Windows.Forms.Button uxJobs;
         private System.Windows.Forms.Button uxLogs;
     }

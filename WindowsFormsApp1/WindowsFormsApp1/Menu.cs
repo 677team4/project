@@ -19,7 +19,9 @@ namespace WindowsFormsApp1
 
         private void uxExit_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            this.Hide();
+            Login log = new Login();
+            log.Show();
         }
 
         private void uxJobs_Click(object sender, EventArgs e)

@@ -29,33 +29,35 @@
         private void InitializeComponent()
         {
             this.uxInspector = new System.Windows.Forms.Label();
-            this.uxExit = new System.Windows.Forms.Button();
+            this.uxLogout = new System.Windows.Forms.Button();
             this.uxView = new System.Windows.Forms.Button();
-            this.uxInspections = new System.Windows.Forms.CheckedListBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // uxInspector
             // 
             this.uxInspector.AutoSize = true;
-            this.uxInspector.Font = new System.Drawing.Font("BDP Birgula", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxInspector.Location = new System.Drawing.Point(74, 23);
+            this.uxInspector.Font = new System.Drawing.Font("Baskerville Old Face", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxInspector.Location = new System.Drawing.Point(89, 29);
             this.uxInspector.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxInspector.Name = "uxInspector";
-            this.uxInspector.Size = new System.Drawing.Size(282, 71);
+            this.uxInspector.Size = new System.Drawing.Size(233, 62);
             this.uxInspector.TabIndex = 2;
             this.uxInspector.Text = "Inspector";
             // 
-            // uxExit
+            // uxLogout
             // 
-            this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExit.Location = new System.Drawing.Point(226, 259);
-            this.uxExit.Margin = new System.Windows.Forms.Padding(2);
-            this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(130, 56);
-            this.uxExit.TabIndex = 3;
-            this.uxExit.Text = "Exit";
-            this.uxExit.UseVisualStyleBackColor = true;
-            this.uxExit.Click += new System.EventHandler(this.uxExit_Click);
+            this.uxLogout.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxLogout.Location = new System.Drawing.Point(226, 259);
+            this.uxLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.uxLogout.Name = "uxLogout";
+            this.uxLogout.Size = new System.Drawing.Size(130, 56);
+            this.uxLogout.TabIndex = 3;
+            this.uxLogout.Text = "Logout";
+            this.uxLogout.UseVisualStyleBackColor = true;
+            this.uxLogout.Click += new System.EventHandler(this.uxExit_Click);
             // 
             // uxView
             // 
@@ -69,19 +71,38 @@
             this.uxView.UseVisualStyleBackColor = true;
             this.uxView.Click += new System.EventHandler(this.uxView_Click);
             // 
-            // uxInspections
+            // radioButton1
             // 
-            this.uxInspections.FormattingEnabled = true;
-            this.uxInspections.Items.AddRange(new object[] {
-            "Inspection 1",
-            "Inspection 2",
-            "Inspection 3"});
-            this.uxInspections.Location = new System.Drawing.Point(72, 114);
-            this.uxInspections.Margin = new System.Windows.Forms.Padding(2);
-            this.uxInspections.MultiColumn = true;
-            this.uxInspections.Name = "uxInspections";
-            this.uxInspections.Size = new System.Drawing.Size(284, 94);
-            this.uxInspections.TabIndex = 6;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(120, 120);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(31, 17);
+            this.radioButton1.TabIndex = 8;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(120, 143);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(31, 17);
+            this.radioButton2.TabIndex = 9;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(120, 166);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(31, 17);
+            this.radioButton3.TabIndex = 10;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "3";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // Menu3
             // 
@@ -89,9 +110,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(430, 366);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.uxView);
-            this.Controls.Add(this.uxInspections);
-            this.Controls.Add(this.uxExit);
+            this.Controls.Add(this.uxLogout);
             this.Controls.Add(this.uxInspector);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu3";
@@ -104,8 +127,10 @@
         #endregion
 
         private System.Windows.Forms.Label uxInspector;
-        private System.Windows.Forms.Button uxExit;
+        private System.Windows.Forms.Button uxLogout;
         private System.Windows.Forms.Button uxView;
-        private System.Windows.Forms.CheckedListBox uxInspections;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }
