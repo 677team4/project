@@ -37,11 +37,11 @@
             // uxManager
             // 
             this.uxManager.AutoSize = true;
-            this.uxManager.Font = new System.Drawing.Font("Baskerville Old Face", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxManager.Location = new System.Drawing.Point(119, 60);
+            this.uxManager.Font = new System.Drawing.Font("Myanmar Text", 41.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxManager.Location = new System.Drawing.Point(103, 43);
             this.uxManager.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxManager.Name = "uxManager";
-            this.uxManager.Size = new System.Drawing.Size(218, 62);
+            this.uxManager.Size = new System.Drawing.Size(274, 97);
             this.uxManager.TabIndex = 1;
             this.uxManager.Text = "Manager";
             // 

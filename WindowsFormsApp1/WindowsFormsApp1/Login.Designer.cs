@@ -52,11 +52,11 @@
             // uxWildcat
             // 
             this.uxWildcat.AutoSize = true;
-            this.uxWildcat.Font = new System.Drawing.Font("Baskerville Old Face", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxWildcat.Location = new System.Drawing.Point(123, 44);
+            this.uxWildcat.Font = new System.Drawing.Font("Myanmar Text", 41.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxWildcat.Location = new System.Drawing.Point(89, 23);
             this.uxWildcat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxWildcat.Name = "uxWildcat";
-            this.uxWildcat.Size = new System.Drawing.Size(399, 62);
+            this.uxWildcat.Size = new System.Drawing.Size(473, 97);
             this.uxWildcat.TabIndex = 0;
             this.uxWildcat.Text = "Wildcat Refinery";
             // 

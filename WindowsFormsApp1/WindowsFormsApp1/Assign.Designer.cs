@@ -58,10 +58,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("BDP Birgula", 41.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(124, 28);
+            this.label1.Font = new System.Drawing.Font("Myanmar Text", 41.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(119, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 71);
+            this.label1.Size = new System.Drawing.Size(212, 97);
             this.label1.TabIndex = 5;
             this.label1.Text = "Assign";
             // 
