@@ -35,8 +35,6 @@ namespace WindowsFormsApp1
         private void uxExit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login log = new Login();
-            log.Show();
         }
     }
 }

@@ -52,7 +52,7 @@
             this.uxView.Name = "uxView";
             this.uxView.Size = new System.Drawing.Size(173, 51);
             this.uxView.TabIndex = 1;
-            this.uxView.Text = "View Weld Photo";
+            this.uxView.Text = "Upload Photo";
             this.uxView.UseVisualStyleBackColor = true;
             this.uxView.Click += new System.EventHandler(this.uxView_Click);
             // 
@@ -63,7 +63,7 @@
             this.uxExit.Name = "uxExit";
             this.uxExit.Size = new System.Drawing.Size(173, 51);
             this.uxExit.TabIndex = 2;
-            this.uxExit.Text = "Logout";
+            this.uxExit.Text = "Exit";
             this.uxExit.UseVisualStyleBackColor = true;
             this.uxExit.Click += new System.EventHandler(this.uxExit_Click);
             // 
@@ -78,7 +78,7 @@
             this.uxUpload.Name = "uxUpload";
             this.uxUpload.Size = new System.Drawing.Size(173, 51);
             this.uxUpload.TabIndex = 3;
-            this.uxUpload.Text = "Upload to Database";
+            this.uxUpload.Text = "Save to Database";
             this.uxUpload.UseVisualStyleBackColor = true;
             // 
             // Photo
