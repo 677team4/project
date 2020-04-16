@@ -32,26 +32,26 @@
             this.uxLogout = new System.Windows.Forms.Button();
             this.uxJobs = new System.Windows.Forms.Button();
             this.uxLogs = new System.Windows.Forms.Button();
+            this.uxWelds = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uxManager
             // 
             this.uxManager.AutoSize = true;
             this.uxManager.Font = new System.Drawing.Font("Myanmar Text", 41.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxManager.Location = new System.Drawing.Point(103, 43);
-            this.uxManager.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.uxManager.Location = new System.Drawing.Point(137, 53);
             this.uxManager.Name = "uxManager";
-            this.uxManager.Size = new System.Drawing.Size(274, 97);
+            this.uxManager.Size = new System.Drawing.Size(341, 123);
             this.uxManager.TabIndex = 1;
             this.uxManager.Text = "Manager";
             // 
             // uxLogout
             // 
             this.uxLogout.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxLogout.Location = new System.Drawing.Point(176, 244);
-            this.uxLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.uxLogout.Location = new System.Drawing.Point(329, 290);
+            this.uxLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxLogout.Name = "uxLogout";
-            this.uxLogout.Size = new System.Drawing.Size(130, 56);
+            this.uxLogout.Size = new System.Drawing.Size(173, 69);
             this.uxLogout.TabIndex = 2;
             this.uxLogout.Text = "Logout";
             this.uxLogout.UseVisualStyleBackColor = true;
@@ -60,10 +60,10 @@
             // uxJobs
             // 
             this.uxJobs.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxJobs.Location = new System.Drawing.Point(104, 164);
-            this.uxJobs.Margin = new System.Windows.Forms.Padding(2);
+            this.uxJobs.Location = new System.Drawing.Point(139, 202);
+            this.uxJobs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxJobs.Name = "uxJobs";
-            this.uxJobs.Size = new System.Drawing.Size(130, 56);
+            this.uxJobs.Size = new System.Drawing.Size(173, 69);
             this.uxJobs.TabIndex = 3;
             this.uxJobs.Text = "Assign Jobs";
             this.uxJobs.UseVisualStyleBackColor = true;
@@ -72,26 +72,38 @@
             // uxLogs
             // 
             this.uxLogs.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxLogs.Location = new System.Drawing.Point(247, 164);
-            this.uxLogs.Margin = new System.Windows.Forms.Padding(2);
+            this.uxLogs.Location = new System.Drawing.Point(329, 202);
+            this.uxLogs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxLogs.Name = "uxLogs";
-            this.uxLogs.Size = new System.Drawing.Size(130, 56);
+            this.uxLogs.Size = new System.Drawing.Size(173, 69);
             this.uxLogs.TabIndex = 4;
             this.uxLogs.Text = "View Logs";
             this.uxLogs.UseVisualStyleBackColor = true;
             this.uxLogs.Click += new System.EventHandler(this.uxLogs_Click);
             // 
+            // uxWelds
+            // 
+            this.uxWelds.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxWelds.Location = new System.Drawing.Point(139, 290);
+            this.uxWelds.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxWelds.Name = "uxWelds";
+            this.uxWelds.Size = new System.Drawing.Size(173, 69);
+            this.uxWelds.TabIndex = 5;
+            this.uxWelds.Text = "Add Welds";
+            this.uxWelds.UseVisualStyleBackColor = true;
+            // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(471, 377);
+            this.ClientSize = new System.Drawing.Size(628, 464);
+            this.Controls.Add(this.uxWelds);
             this.Controls.Add(this.uxLogs);
             this.Controls.Add(this.uxJobs);
             this.Controls.Add(this.uxLogout);
             this.Controls.Add(this.uxManager);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Menu";
             this.Text = "Manager Menu";
             this.ResumeLayout(false);
@@ -105,5 +117,6 @@
         private System.Windows.Forms.Button uxLogout;
         private System.Windows.Forms.Button uxJobs;
         private System.Windows.Forms.Button uxLogs;
+        private System.Windows.Forms.Button uxWelds;
     }
 }
