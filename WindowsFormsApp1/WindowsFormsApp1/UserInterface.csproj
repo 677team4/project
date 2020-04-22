@@ -52,16 +52,15 @@
     <Compile Include="Add.Designer.cs">
       <DependentUpon>Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="Assign.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Assign.Designer.cs">
-      <DependentUpon>Assign.cs</DependentUpon>
-    </Compile>
     <Compile Include="Assignment23DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Assignment23DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment23DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Assignment23DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="databaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -125,9 +124,6 @@
     <EmbeddedResource Include="Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Assign.resx">
-      <DependentUpon>Assign.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +164,17 @@
     </None>
     <None Include="Assignment23DataSet.xss">
       <DependentUpon>Assignment23DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Assignment23DataSet1.xsc">
+      <DependentUpon>Assignment23DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Assignment23DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Assignment23DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assignment23DataSet1.xss">
+      <DependentUpon>Assignment23DataSet1.xsd</DependentUpon>
     </None>
     <None Include="databaseDataSet.xsc">
       <DependentUpon>databaseDataSet.xsd</DependentUpon>

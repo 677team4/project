@@ -24,16 +24,16 @@ namespace WindowsFormsApp1
             log.Show();
         }
 
-        private void uxJobs_Click(object sender, EventArgs e)
-        {
-            Assign a1 = new Assign();
-            a1.Show();
-        }
-
         private void uxLogs_Click(object sender, EventArgs e)
         {
             Logs l = new Logs();
             l.Show();
+        }
+
+        private void uxWelds_Click(object sender, EventArgs e)
+        {
+            Add a = new Add();
+            a.Show();
         }
     }
 }
