@@ -31,5 +31,15 @@ namespace WindowsFormsApp1
         {
             this.Hide();
         }
+
+        private void uxUpload_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxLoad_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

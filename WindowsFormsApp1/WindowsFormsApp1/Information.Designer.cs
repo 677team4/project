@@ -29,7 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label startDateLabel;
+            System.Windows.Forms.Label endDateLabel;
+            System.Windows.Forms.Label unitLabel;
+            System.Windows.Forms.Label equipmentLabel;
+            System.Windows.Forms.Label unitManagerLabel;
+            System.Windows.Forms.Label welderLabel;
+            System.Windows.Forms.Label inspectorLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Information));
+            System.Windows.Forms.Label iDLabel;
+            System.Windows.Forms.Label welderSignatureLabel;
+            System.Windows.Forms.Label inspectorSignatureLabel;
             this.uxPhoto = new System.Windows.Forms.Button();
             this.uxExit = new System.Windows.Forms.Button();
             this.assignment23DataSet = new WindowsFormsApp1.Assignment23DataSet();
@@ -49,30 +59,100 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.logsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.logsDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.endDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.unitTextBox = new System.Windows.Forms.TextBox();
+            this.equipmentTextBox = new System.Windows.Forms.TextBox();
+            this.unitManagerTextBox = new System.Windows.Forms.TextBox();
+            this.welderTextBox = new System.Windows.Forms.TextBox();
+            this.inspectorTextBox = new System.Windows.Forms.TextBox();
+            this.iDTextBox = new System.Windows.Forms.TextBox();
+            this.welderSignatureTextBox = new System.Windows.Forms.TextBox();
+            this.inspectorSignatureTextBox = new System.Windows.Forms.TextBox();
+            startDateLabel = new System.Windows.Forms.Label();
+            endDateLabel = new System.Windows.Forms.Label();
+            unitLabel = new System.Windows.Forms.Label();
+            equipmentLabel = new System.Windows.Forms.Label();
+            unitManagerLabel = new System.Windows.Forms.Label();
+            welderLabel = new System.Windows.Forms.Label();
+            inspectorLabel = new System.Windows.Forms.Label();
+            iDLabel = new System.Windows.Forms.Label();
+            welderSignatureLabel = new System.Windows.Forms.Label();
+            inspectorSignatureLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingNavigator)).BeginInit();
             this.logsBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logsDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // startDateLabel
+            // 
+            startDateLabel.AutoSize = true;
+            startDateLabel.Location = new System.Drawing.Point(97, 71);
+            startDateLabel.Name = "startDateLabel";
+            startDateLabel.Size = new System.Drawing.Size(76, 17);
+            startDateLabel.TabIndex = 3;
+            startDateLabel.Text = "Start Date:";
+            // 
+            // endDateLabel
+            // 
+            endDateLabel.AutoSize = true;
+            endDateLabel.Location = new System.Drawing.Point(102, 115);
+            endDateLabel.Name = "endDateLabel";
+            endDateLabel.Size = new System.Drawing.Size(71, 17);
+            endDateLabel.TabIndex = 5;
+            endDateLabel.Text = "End Date:";
+            // 
+            // unitLabel
+            // 
+            unitLabel.AutoSize = true;
+            unitLabel.Location = new System.Drawing.Point(102, 157);
+            unitLabel.Name = "unitLabel";
+            unitLabel.Size = new System.Drawing.Size(37, 17);
+            unitLabel.TabIndex = 7;
+            unitLabel.Text = "Unit:";
+            // 
+            // equipmentLabel
+            // 
+            equipmentLabel.AutoSize = true;
+            equipmentLabel.Location = new System.Drawing.Point(105, 207);
+            equipmentLabel.Name = "equipmentLabel";
+            equipmentLabel.Size = new System.Drawing.Size(79, 17);
+            equipmentLabel.TabIndex = 9;
+            equipmentLabel.Text = "Equipment:";
+            // 
+            // unitManagerLabel
+            // 
+            unitManagerLabel.AutoSize = true;
+            unitManagerLabel.Location = new System.Drawing.Point(110, 255);
+            unitManagerLabel.Name = "unitManagerLabel";
+            unitManagerLabel.Size = new System.Drawing.Size(97, 17);
+            unitManagerLabel.TabIndex = 11;
+            unitManagerLabel.Text = "Unit Manager:";
+            // 
+            // welderLabel
+            // 
+            welderLabel.AutoSize = true;
+            welderLabel.Location = new System.Drawing.Point(119, 305);
+            welderLabel.Name = "welderLabel";
+            welderLabel.Size = new System.Drawing.Size(57, 17);
+            welderLabel.TabIndex = 13;
+            welderLabel.Text = "Welder:";
+            // 
+            // inspectorLabel
+            // 
+            inspectorLabel.AutoSize = true;
+            inspectorLabel.Location = new System.Drawing.Point(119, 350);
+            inspectorLabel.Name = "inspectorLabel";
+            inspectorLabel.Size = new System.Drawing.Size(70, 17);
+            inspectorLabel.TabIndex = 15;
+            inspectorLabel.Text = "Inspector:";
             // 
             // uxPhoto
             // 
             this.uxPhoto.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPhoto.Location = new System.Drawing.Point(383, 428);
-            this.uxPhoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxPhoto.Location = new System.Drawing.Point(382, 472);
+            this.uxPhoto.Margin = new System.Windows.Forms.Padding(4);
             this.uxPhoto.Name = "uxPhoto";
             this.uxPhoto.Size = new System.Drawing.Size(168, 63);
             this.uxPhoto.TabIndex = 0;
@@ -83,8 +163,8 @@
             // uxExit
             // 
             this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExit.Location = new System.Drawing.Point(95, 428);
-            this.uxExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uxExit.Location = new System.Drawing.Point(94, 472);
+            this.uxExit.Margin = new System.Windows.Forms.Padding(4);
             this.uxExit.Name = "uxExit";
             this.uxExit.Size = new System.Drawing.Size(168, 63);
             this.uxExit.TabIndex = 1;
@@ -239,117 +319,112 @@
             this.logsBindingNavigatorSaveItem.Text = "Save Data";
             this.logsBindingNavigatorSaveItem.Click += new System.EventHandler(this.logsBindingNavigatorSaveItem_Click);
             // 
-            // logsDataGridView
+            // startDateDateTimePicker
             // 
-            this.logsDataGridView.AutoGenerateColumns = false;
-            this.logsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.logsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.logsDataGridView.DataSource = this.logsBindingSource;
-            this.logsDataGridView.Location = new System.Drawing.Point(95, 96);
-            this.logsDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.logsDataGridView.Name = "logsDataGridView";
-            this.logsDataGridView.RowHeadersWidth = 51;
-            this.logsDataGridView.Size = new System.Drawing.Size(456, 271);
-            this.logsDataGridView.TabIndex = 3;
+            this.startDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.logsBindingSource, "StartDate", true));
+            this.startDateDateTimePicker.Location = new System.Drawing.Point(179, 67);
+            this.startDateDateTimePicker.Name = "startDateDateTimePicker";
+            this.startDateDateTimePicker.Size = new System.Drawing.Size(265, 22);
+            this.startDateDateTimePicker.TabIndex = 4;
             // 
-            // dataGridViewTextBoxColumn1
+            // endDateDateTimePicker
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "StartDate";
-            this.dataGridViewTextBoxColumn1.HeaderText = "StartDate";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
+            this.endDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.logsBindingSource, "EndDate", true));
+            this.endDateDateTimePicker.Location = new System.Drawing.Point(179, 111);
+            this.endDateDateTimePicker.Name = "endDateDateTimePicker";
+            this.endDateDateTimePicker.Size = new System.Drawing.Size(265, 22);
+            this.endDateDateTimePicker.TabIndex = 6;
             // 
-            // dataGridViewTextBoxColumn2
+            // unitTextBox
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "EndDate";
-            this.dataGridViewTextBoxColumn2.HeaderText = "EndDate";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
+            this.unitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Unit", true));
+            this.unitTextBox.Location = new System.Drawing.Point(145, 154);
+            this.unitTextBox.Name = "unitTextBox";
+            this.unitTextBox.Size = new System.Drawing.Size(405, 22);
+            this.unitTextBox.TabIndex = 8;
             // 
-            // dataGridViewTextBoxColumn3
+            // equipmentTextBox
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Unit";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Unit";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
+            this.equipmentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Equipment", true));
+            this.equipmentTextBox.Location = new System.Drawing.Point(190, 204);
+            this.equipmentTextBox.Name = "equipmentTextBox";
+            this.equipmentTextBox.Size = new System.Drawing.Size(100, 22);
+            this.equipmentTextBox.TabIndex = 10;
             // 
-            // dataGridViewTextBoxColumn4
+            // unitManagerTextBox
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Equipment";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Equipment";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
+            this.unitManagerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "UnitManager", true));
+            this.unitManagerTextBox.Location = new System.Drawing.Point(213, 252);
+            this.unitManagerTextBox.Name = "unitManagerTextBox";
+            this.unitManagerTextBox.Size = new System.Drawing.Size(100, 22);
+            this.unitManagerTextBox.TabIndex = 12;
             // 
-            // dataGridViewTextBoxColumn5
+            // welderTextBox
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "UnitManager";
-            this.dataGridViewTextBoxColumn5.HeaderText = "UnitManager";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.welderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Welder", true));
+            this.welderTextBox.Location = new System.Drawing.Point(182, 302);
+            this.welderTextBox.Name = "welderTextBox";
+            this.welderTextBox.Size = new System.Drawing.Size(100, 22);
+            this.welderTextBox.TabIndex = 14;
             // 
-            // dataGridViewTextBoxColumn6
+            // inspectorTextBox
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Welder";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Welder";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            this.inspectorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Inspector", true));
+            this.inspectorTextBox.Location = new System.Drawing.Point(195, 347);
+            this.inspectorTextBox.Name = "inspectorTextBox";
+            this.inspectorTextBox.Size = new System.Drawing.Size(100, 22);
+            this.inspectorTextBox.TabIndex = 16;
             // 
-            // dataGridViewTextBoxColumn7
+            // iDLabel
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Inspector";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Inspector";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 125;
+            iDLabel.AutoSize = true;
+            iDLabel.Location = new System.Drawing.Point(102, 42);
+            iDLabel.Name = "iDLabel";
+            iDLabel.Size = new System.Drawing.Size(25, 17);
+            iDLabel.TabIndex = 17;
+            iDLabel.Text = "ID:";
             // 
-            // dataGridViewTextBoxColumn8
+            // iDTextBox
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Shift1or2";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Shift1or2";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 125;
+            this.iDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "ID", true));
+            this.iDTextBox.Location = new System.Drawing.Point(133, 39);
+            this.iDTextBox.Name = "iDTextBox";
+            this.iDTextBox.Size = new System.Drawing.Size(311, 22);
+            this.iDTextBox.TabIndex = 18;
             // 
-            // dataGridViewTextBoxColumn9
+            // welderSignatureLabel
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "WelderSignature";
-            this.dataGridViewTextBoxColumn9.HeaderText = "WelderSignature";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 125;
+            welderSignatureLabel.AutoSize = true;
+            welderSignatureLabel.Location = new System.Drawing.Point(133, 386);
+            welderSignatureLabel.Name = "welderSignatureLabel";
+            welderSignatureLabel.Size = new System.Drawing.Size(122, 17);
+            welderSignatureLabel.TabIndex = 19;
+            welderSignatureLabel.Text = "Welder Signature:";
             // 
-            // dataGridViewTextBoxColumn10
+            // welderSignatureTextBox
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "InspectorSignature";
-            this.dataGridViewTextBoxColumn10.HeaderText = "InspectorSignature";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 125;
+            this.welderSignatureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "WelderSignature", true));
+            this.welderSignatureTextBox.Location = new System.Drawing.Point(261, 383);
+            this.welderSignatureTextBox.Name = "welderSignatureTextBox";
+            this.welderSignatureTextBox.Size = new System.Drawing.Size(100, 22);
+            this.welderSignatureTextBox.TabIndex = 20;
             // 
-            // dataGridViewTextBoxColumn11
+            // inspectorSignatureLabel
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Notes";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Notes";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 125;
+            inspectorSignatureLabel.AutoSize = true;
+            inspectorSignatureLabel.Location = new System.Drawing.Point(138, 431);
+            inspectorSignatureLabel.Name = "inspectorSignatureLabel";
+            inspectorSignatureLabel.Size = new System.Drawing.Size(135, 17);
+            inspectorSignatureLabel.TabIndex = 21;
+            inspectorSignatureLabel.Text = "Inspector Signature:";
+            // 
+            // inspectorSignatureTextBox
+            // 
+            this.inspectorSignatureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "InspectorSignature", true));
+            this.inspectorSignatureTextBox.Location = new System.Drawing.Point(279, 428);
+            this.inspectorSignatureTextBox.Name = "inspectorSignatureTextBox";
+            this.inspectorSignatureTextBox.Size = new System.Drawing.Size(100, 22);
+            this.inspectorSignatureTextBox.TabIndex = 22;
             // 
             // Information
             // 
@@ -357,11 +432,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(675, 566);
-            this.Controls.Add(this.logsDataGridView);
+            this.Controls.Add(inspectorSignatureLabel);
+            this.Controls.Add(this.inspectorSignatureTextBox);
+            this.Controls.Add(welderSignatureLabel);
+            this.Controls.Add(this.welderSignatureTextBox);
+            this.Controls.Add(iDLabel);
+            this.Controls.Add(this.iDTextBox);
+            this.Controls.Add(inspectorLabel);
+            this.Controls.Add(this.inspectorTextBox);
+            this.Controls.Add(welderLabel);
+            this.Controls.Add(this.welderTextBox);
+            this.Controls.Add(unitManagerLabel);
+            this.Controls.Add(this.unitManagerTextBox);
+            this.Controls.Add(equipmentLabel);
+            this.Controls.Add(this.equipmentTextBox);
+            this.Controls.Add(unitLabel);
+            this.Controls.Add(this.unitTextBox);
+            this.Controls.Add(endDateLabel);
+            this.Controls.Add(this.endDateDateTimePicker);
+            this.Controls.Add(startDateLabel);
+            this.Controls.Add(this.startDateDateTimePicker);
             this.Controls.Add(this.logsBindingNavigator);
             this.Controls.Add(this.uxExit);
             this.Controls.Add(this.uxPhoto);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Information";
             this.Text = "Information";
             this.Load += new System.EventHandler(this.Information_Load);
@@ -370,7 +464,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingNavigator)).EndInit();
             this.logsBindingNavigator.ResumeLayout(false);
             this.logsBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,17 +490,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton logsBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView logsDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DateTimePicker startDateDateTimePicker;
+        private System.Windows.Forms.DateTimePicker endDateDateTimePicker;
+        private System.Windows.Forms.TextBox unitTextBox;
+        private System.Windows.Forms.TextBox equipmentTextBox;
+        private System.Windows.Forms.TextBox unitManagerTextBox;
+        private System.Windows.Forms.TextBox welderTextBox;
+        private System.Windows.Forms.TextBox inspectorTextBox;
+        private System.Windows.Forms.TextBox iDTextBox;
+        private System.Windows.Forms.TextBox welderSignatureTextBox;
+        private System.Windows.Forms.TextBox inspectorSignatureTextBox;
     }
 }

@@ -897,6 +897,8 @@ namespace WindowsFormsApp1 {
             
             private global::System.Data.DataColumn columnNotes;
             
+            private global::System.Data.DataColumn columnID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public LogsDataTable() {
@@ -1020,6 +1022,14 @@ namespace WindowsFormsApp1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1055,7 +1065,7 @@ namespace WindowsFormsApp1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public LogsRow AddLogsRow(System.DateTime StartDate, System.DateTime EndDate, string Unit, string Equipment, string UnitManager, string Welder, string Inspector, string Shift1or2, string WelderSignature, string InspectorSignature, string Notes) {
+            public LogsRow AddLogsRow(System.DateTime StartDate, System.DateTime EndDate, string Unit, string Equipment, string UnitManager, string Welder, string Inspector, string Shift1or2, string WelderSignature, string InspectorSignature, string Notes, int ID) {
                 LogsRow rowLogsRow = ((LogsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         StartDate,
@@ -1068,7 +1078,8 @@ namespace WindowsFormsApp1 {
                         Shift1or2,
                         WelderSignature,
                         InspectorSignature,
-                        Notes};
+                        Notes,
+                        ID};
                 rowLogsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowLogsRow);
                 return rowLogsRow;
@@ -1102,6 +1113,7 @@ namespace WindowsFormsApp1 {
                 this.columnWelderSignature = base.Columns["WelderSignature"];
                 this.columnInspectorSignature = base.Columns["InspectorSignature"];
                 this.columnNotes = base.Columns["Notes"];
+                this.columnID = base.Columns["ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1129,6 +1141,8 @@ namespace WindowsFormsApp1 {
                 base.Columns.Add(this.columnInspectorSignature);
                 this.columnNotes = new global::System.Data.DataColumn("Notes", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNotes);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
                 this.columnUnit.MaxLength = 50;
                 this.columnEquipment.MaxLength = 50;
                 this.columnUnitManager.MaxLength = 50;
@@ -1598,6 +1612,22 @@ namespace WindowsFormsApp1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ID {
+                get {
+                    try {
+                        return ((int)(this[this.tableLogs.IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ID\' in table \'Logs\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableLogs.IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsStartDateNull() {
                 return this.IsNull(this.tableLogs.StartDateColumn);
             }
@@ -1726,6 +1756,18 @@ namespace WindowsFormsApp1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetNotesNull() {
                 this[this.tableLogs.NotesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsIDNull() {
+                return this.IsNull(this.tableLogs.IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetIDNull() {
+                this[this.tableLogs.IDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2439,10 +2481,11 @@ namespace WindowsFormsApp1.Assignment23DataSetTableAdapters {
             tableMapping.ColumnMappings.Add("WelderSignature", "WelderSignature");
             tableMapping.ColumnMappings.Add("InspectorSignature", "InspectorSignature");
             tableMapping.ColumnMappings.Add("Notes", "Notes");
+            tableMapping.ColumnMappings.Add("ID", "ID");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Logs] ([StartDate], [EndDate], [Unit], [Equipment], [UnitManager], [Welder], [Inspector], [Shift1or2], [WelderSignature], [InspectorSignature], [Notes]) VALUES (@StartDate, @EndDate, @Unit, @Equipment, @UnitManager, @Welder, @Inspector, @Shift1or2, @WelderSignature, @InspectorSignature, @Notes)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Logs] ([StartDate], [EndDate], [Unit], [Equipment], [UnitManager], [Welder], [Inspector], [Shift1or2], [WelderSignature], [InspectorSignature], [Notes], [ID]) VALUES (@StartDate, @EndDate, @Unit, @Equipment, @UnitManager, @Welder, @Inspector, @Shift1or2, @WelderSignature, @InspectorSignature, @Notes, @ID)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartDate", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StartDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EndDate", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EndDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2455,6 +2498,7 @@ namespace WindowsFormsApp1.Assignment23DataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WelderSignature", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WelderSignature", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InspectorSignature", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InspectorSignature", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Notes", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Notes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2471,7 +2515,7 @@ namespace WindowsFormsApp1.Assignment23DataSetTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT StartDate, EndDate, Unit, Equipment, UnitManager, Welder, Inspector, Shift" +
-                "1or2, WelderSignature, InspectorSignature, Notes FROM dbo.Logs";
+                "1or2, WelderSignature, InspectorSignature, Notes, ID FROM Logs";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2532,7 +2576,7 @@ namespace WindowsFormsApp1.Assignment23DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate, string Unit, string Equipment, string UnitManager, string Welder, string Inspector, string Shift1or2, string WelderSignature, string InspectorSignature, string Notes) {
+        public virtual int Insert(global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate, string Unit, string Equipment, string UnitManager, string Welder, string Inspector, string Shift1or2, string WelderSignature, string InspectorSignature, string Notes, global::System.Nullable<int> ID) {
             if ((StartDate.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(StartDate.Value));
             }
@@ -2598,6 +2642,12 @@ namespace WindowsFormsApp1.Assignment23DataSetTableAdapters {
             }
             else {
                 this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Notes));
+            }
+            if ((ID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((int)(ID.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

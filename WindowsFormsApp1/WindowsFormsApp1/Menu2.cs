@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    
+
     public partial class Menu2 : Form
     {
         public Menu2()
@@ -28,6 +30,18 @@ namespace WindowsFormsApp1
         {
             Information i = new Information();
             i.Show();
+        }
+
+        private void uxJob_Click(object sender, EventArgs e)
+        {
+            Signature s = new Signature();
+            s.s = false;
+            s.Show();
+        }
+
+        private void Menu2_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -29,5 +29,12 @@ namespace WindowsFormsApp1
             Information i = new Information();
             i.Show();
         }
+
+        private void uxJob_Click(object sender, EventArgs e)
+        {
+            Signature s = new Signature();
+            s.s = true;
+            s.Show();
+        }
     }
 }

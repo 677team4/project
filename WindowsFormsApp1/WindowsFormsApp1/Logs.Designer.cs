@@ -39,22 +39,29 @@
             this.logsTableAdapter1 = new WindowsFormsApp1.Assignment23DataSetTableAdapters.LogsTableAdapter();
             this.tableAdapterManager1 = new WindowsFormsApp1.Assignment23DataSetTableAdapters.TableAdapterManager();
             this.logsDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.logsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.assignment23DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.logsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.equipmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitManagerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.welderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inspectorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shift1or2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.welderSignatureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inspectorSignatureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.notesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.projectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // projectDataSet
@@ -81,9 +88,10 @@
             // uxExit
             // 
             this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExit.Location = new System.Drawing.Point(495, 403);
+            this.uxExit.Location = new System.Drawing.Point(660, 496);
+            this.uxExit.Margin = new System.Windows.Forms.Padding(4);
             this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(148, 71);
+            this.uxExit.Size = new System.Drawing.Size(197, 87);
             this.uxExit.TabIndex = 2;
             this.uxExit.Text = "Exit";
             this.uxExit.UseVisualStyleBackColor = true;
@@ -116,97 +124,146 @@
             this.logsDataGridView.AutoGenerateColumns = false;
             this.logsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.logsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.logsDataGridView.DataSource = this.logsBindingSource1;
-            this.logsDataGridView.Location = new System.Drawing.Point(-1, -2);
+            this.startDateDataGridViewTextBoxColumn,
+            this.endDateDataGridViewTextBoxColumn,
+            this.unitDataGridViewTextBoxColumn,
+            this.equipmentDataGridViewTextBoxColumn,
+            this.unitManagerDataGridViewTextBoxColumn,
+            this.welderDataGridViewTextBoxColumn,
+            this.inspectorDataGridViewTextBoxColumn,
+            this.shift1or2DataGridViewTextBoxColumn,
+            this.welderSignatureDataGridViewTextBoxColumn,
+            this.inspectorSignatureDataGridViewTextBoxColumn,
+            this.notesDataGridViewTextBoxColumn,
+            this.iDDataGridViewTextBoxColumn});
+            this.logsDataGridView.DataSource = this.logsBindingSource3;
+            this.logsDataGridView.Location = new System.Drawing.Point(2, 1);
+            this.logsDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.logsDataGridView.Name = "logsDataGridView";
-            this.logsDataGridView.Size = new System.Drawing.Size(1222, 377);
+            this.logsDataGridView.RowHeadersWidth = 51;
+            this.logsDataGridView.Size = new System.Drawing.Size(1629, 464);
             this.logsDataGridView.TabIndex = 2;
             // 
-            // dataGridViewTextBoxColumn1
+            // logsBindingSource2
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "StartDate";
-            this.dataGridViewTextBoxColumn1.HeaderText = "StartDate";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.logsBindingSource2.DataMember = "Logs";
+            this.logsBindingSource2.DataSource = this.assignment23DataSet;
             // 
-            // dataGridViewTextBoxColumn2
+            // assignment23DataSetBindingSource
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "EndDate";
-            this.dataGridViewTextBoxColumn2.HeaderText = "EndDate";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.assignment23DataSetBindingSource.DataSource = this.assignment23DataSet;
+            this.assignment23DataSetBindingSource.Position = 0;
             // 
-            // dataGridViewTextBoxColumn3
+            // logsBindingSource3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Unit";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Unit";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.logsBindingSource3.DataMember = "Logs";
+            this.logsBindingSource3.DataSource = this.assignment23DataSet;
             // 
-            // dataGridViewTextBoxColumn4
+            // startDateDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Equipment";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Equipment";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.startDateDataGridViewTextBoxColumn.DataPropertyName = "StartDate";
+            this.startDateDataGridViewTextBoxColumn.HeaderText = "StartDate";
+            this.startDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.startDateDataGridViewTextBoxColumn.Name = "startDateDataGridViewTextBoxColumn";
+            this.startDateDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dataGridViewTextBoxColumn5
+            // endDateDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "UnitManager";
-            this.dataGridViewTextBoxColumn5.HeaderText = "UnitManager";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.endDateDataGridViewTextBoxColumn.DataPropertyName = "EndDate";
+            this.endDateDataGridViewTextBoxColumn.HeaderText = "EndDate";
+            this.endDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.endDateDataGridViewTextBoxColumn.Name = "endDateDataGridViewTextBoxColumn";
+            this.endDateDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dataGridViewTextBoxColumn6
+            // unitDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Welder";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Welder";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.unitDataGridViewTextBoxColumn.DataPropertyName = "Unit";
+            this.unitDataGridViewTextBoxColumn.HeaderText = "Unit";
+            this.unitDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitDataGridViewTextBoxColumn.Name = "unitDataGridViewTextBoxColumn";
+            this.unitDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dataGridViewTextBoxColumn7
+            // equipmentDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Inspector";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Inspector";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.equipmentDataGridViewTextBoxColumn.DataPropertyName = "Equipment";
+            this.equipmentDataGridViewTextBoxColumn.HeaderText = "Equipment";
+            this.equipmentDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.equipmentDataGridViewTextBoxColumn.Name = "equipmentDataGridViewTextBoxColumn";
+            this.equipmentDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dataGridViewTextBoxColumn8
+            // unitManagerDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Shift1or2";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Shift1or2";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.unitManagerDataGridViewTextBoxColumn.DataPropertyName = "UnitManager";
+            this.unitManagerDataGridViewTextBoxColumn.HeaderText = "UnitManager";
+            this.unitManagerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitManagerDataGridViewTextBoxColumn.Name = "unitManagerDataGridViewTextBoxColumn";
+            this.unitManagerDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dataGridViewTextBoxColumn9
+            // welderDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "WelderSignature";
-            this.dataGridViewTextBoxColumn9.HeaderText = "WelderSignature";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.welderDataGridViewTextBoxColumn.DataPropertyName = "Welder";
+            this.welderDataGridViewTextBoxColumn.HeaderText = "Welder";
+            this.welderDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.welderDataGridViewTextBoxColumn.Name = "welderDataGridViewTextBoxColumn";
+            this.welderDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dataGridViewTextBoxColumn10
+            // inspectorDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "InspectorSignature";
-            this.dataGridViewTextBoxColumn10.HeaderText = "InspectorSignature";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.inspectorDataGridViewTextBoxColumn.DataPropertyName = "Inspector";
+            this.inspectorDataGridViewTextBoxColumn.HeaderText = "Inspector";
+            this.inspectorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.inspectorDataGridViewTextBoxColumn.Name = "inspectorDataGridViewTextBoxColumn";
+            this.inspectorDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dataGridViewTextBoxColumn11
+            // shift1or2DataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Notes";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Notes";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.shift1or2DataGridViewTextBoxColumn.DataPropertyName = "Shift1or2";
+            this.shift1or2DataGridViewTextBoxColumn.HeaderText = "Shift1or2";
+            this.shift1or2DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.shift1or2DataGridViewTextBoxColumn.Name = "shift1or2DataGridViewTextBoxColumn";
+            this.shift1or2DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // welderSignatureDataGridViewTextBoxColumn
+            // 
+            this.welderSignatureDataGridViewTextBoxColumn.DataPropertyName = "WelderSignature";
+            this.welderSignatureDataGridViewTextBoxColumn.HeaderText = "WelderSignature";
+            this.welderSignatureDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.welderSignatureDataGridViewTextBoxColumn.Name = "welderSignatureDataGridViewTextBoxColumn";
+            this.welderSignatureDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // inspectorSignatureDataGridViewTextBoxColumn
+            // 
+            this.inspectorSignatureDataGridViewTextBoxColumn.DataPropertyName = "InspectorSignature";
+            this.inspectorSignatureDataGridViewTextBoxColumn.HeaderText = "InspectorSignature";
+            this.inspectorSignatureDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.inspectorSignatureDataGridViewTextBoxColumn.Name = "inspectorSignatureDataGridViewTextBoxColumn";
+            this.inspectorSignatureDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // notesDataGridViewTextBoxColumn
+            // 
+            this.notesDataGridViewTextBoxColumn.DataPropertyName = "Notes";
+            this.notesDataGridViewTextBoxColumn.HeaderText = "Notes";
+            this.notesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.notesDataGridViewTextBoxColumn.Name = "notesDataGridViewTextBoxColumn";
+            this.notesDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.Width = 125;
             // 
             // Logs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(1139, 499);
+            this.ClientSize = new System.Drawing.Size(1728, 614);
             this.Controls.Add(this.logsDataGridView);
             this.Controls.Add(this.uxExit);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Logs";
             this.Text = "Logs";
             this.Load += new System.EventHandler(this.Logs_Load);
@@ -215,6 +272,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,16 +291,20 @@
         private Assignment23DataSetTableAdapters.LogsTableAdapter logsTableAdapter1;
         private Assignment23DataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.DataGridView logsDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.BindingSource logsBindingSource2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn equipmentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitManagerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn welderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn inspectorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shift1or2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn welderSignatureDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn inspectorSignatureDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn notesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource logsBindingSource3;
+        private System.Windows.Forms.BindingSource assignment23DataSetBindingSource;
     }
 }
