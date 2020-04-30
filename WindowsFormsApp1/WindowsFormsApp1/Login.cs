@@ -59,6 +59,15 @@ namespace WindowsFormsApp1
                     Menu3 m3 = new Menu3();
                     m3.Show();
                 }
+                else if (uxUsername.Text == "Admin")
+                {
+                    Menu4 m4 = new Menu4();
+                    m4.Show();
+                }
+                else
+                {
+                    MessageBox.Show("User has no access please get admin to give correct permissions.");
+                }
             }
             else
             {

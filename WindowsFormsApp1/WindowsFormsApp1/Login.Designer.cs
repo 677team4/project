@@ -53,10 +53,9 @@
             // 
             this.uxWildcat.AutoSize = true;
             this.uxWildcat.Font = new System.Drawing.Font("Myanmar Text", 41.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxWildcat.Location = new System.Drawing.Point(89, 23);
-            this.uxWildcat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.uxWildcat.Location = new System.Drawing.Point(119, 28);
             this.uxWildcat.Name = "uxWildcat";
-            this.uxWildcat.Size = new System.Drawing.Size(473, 97);
+            this.uxWildcat.Size = new System.Drawing.Size(591, 123);
             this.uxWildcat.TabIndex = 0;
             this.uxWildcat.Text = "Wildcat Refinery";
             // 
@@ -64,10 +63,9 @@
             // 
             this.uxUser.AutoSize = true;
             this.uxUser.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxUser.Location = new System.Drawing.Point(106, 138);
-            this.uxUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.uxUser.Location = new System.Drawing.Point(141, 170);
             this.uxUser.Name = "uxUser";
-            this.uxUser.Size = new System.Drawing.Size(100, 24);
+            this.uxUser.Size = new System.Drawing.Size(125, 31);
             this.uxUser.TabIndex = 1;
             this.uxUser.Text = "Username:";
             // 
@@ -75,39 +73,38 @@
             // 
             this.uxPass.AutoSize = true;
             this.uxPass.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPass.Location = new System.Drawing.Point(106, 207);
-            this.uxPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.uxPass.Location = new System.Drawing.Point(141, 255);
             this.uxPass.Name = "uxPass";
-            this.uxPass.Size = new System.Drawing.Size(94, 24);
+            this.uxPass.Size = new System.Drawing.Size(118, 31);
             this.uxPass.TabIndex = 2;
             this.uxPass.Text = "Password:";
             // 
             // uxUsername
             // 
             this.uxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxUsername.Location = new System.Drawing.Point(232, 134);
-            this.uxUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.uxUsername.Location = new System.Drawing.Point(309, 165);
+            this.uxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxUsername.Name = "uxUsername";
-            this.uxUsername.Size = new System.Drawing.Size(312, 30);
+            this.uxUsername.Size = new System.Drawing.Size(415, 36);
             this.uxUsername.TabIndex = 3;
             // 
             // uxPassword
             // 
             this.uxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPassword.Location = new System.Drawing.Point(232, 203);
-            this.uxPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.uxPassword.Location = new System.Drawing.Point(309, 250);
+            this.uxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxPassword.Name = "uxPassword";
             this.uxPassword.PasswordChar = '*';
-            this.uxPassword.Size = new System.Drawing.Size(312, 30);
+            this.uxPassword.Size = new System.Drawing.Size(415, 36);
             this.uxPassword.TabIndex = 4;
             // 
             // uxLogin
             // 
             this.uxLogin.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxLogin.Location = new System.Drawing.Point(155, 288);
-            this.uxLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.uxLogin.Location = new System.Drawing.Point(207, 354);
+            this.uxLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxLogin.Name = "uxLogin";
-            this.uxLogin.Size = new System.Drawing.Size(130, 52);
+            this.uxLogin.Size = new System.Drawing.Size(173, 64);
             this.uxLogin.TabIndex = 5;
             this.uxLogin.Text = "Login";
             this.uxLogin.UseVisualStyleBackColor = true;
@@ -116,10 +113,10 @@
             // uxExit
             // 
             this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExit.Location = new System.Drawing.Point(365, 288);
-            this.uxExit.Margin = new System.Windows.Forms.Padding(2);
+            this.uxExit.Location = new System.Drawing.Point(487, 354);
+            this.uxExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(130, 52);
+            this.uxExit.Size = new System.Drawing.Size(173, 64);
             this.uxExit.TabIndex = 6;
             this.uxExit.Text = "Exit";
             this.uxExit.UseVisualStyleBackColor = true;
@@ -163,10 +160,10 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(651, 385);
+            this.ClientSize = new System.Drawing.Size(868, 474);
             this.Controls.Add(this.uxExit);
             this.Controls.Add(this.uxLogin);
             this.Controls.Add(this.uxPassword);
@@ -175,7 +172,7 @@
             this.Controls.Add(this.uxUser);
             this.Controls.Add(this.uxWildcat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
