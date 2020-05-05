@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void uxPhoto_Click(object sender, EventArgs e)
         {
-            Photo p1 = new Photo();
+            Picture p1 = new Picture();
             p1.Show();
         }
 
