@@ -50,7 +50,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.uxLogout = new System.Windows.Forms.Button();
+            this.uxExit = new System.Windows.Forms.Button();
             this.uxSubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSetBindingSource)).BeginInit();
@@ -90,6 +90,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(129, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 17);
@@ -99,6 +100,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(129, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 17);
@@ -108,6 +110,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(129, 252);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 17);
@@ -117,6 +120,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(129, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 17);
@@ -126,6 +130,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(129, 345);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 17);
@@ -135,6 +140,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(129, 302);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 17);
@@ -144,6 +150,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(129, 446);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 17);
@@ -153,6 +160,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(129, 403);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(36, 17);
@@ -215,17 +223,20 @@
             this.textBox8.Size = new System.Drawing.Size(336, 22);
             this.textBox8.TabIndex = 17;
             // 
-            // uxLogout
+            // uxExit
             // 
-            this.uxLogout.Location = new System.Drawing.Point(132, 487);
-            this.uxLogout.Name = "uxLogout";
-            this.uxLogout.Size = new System.Drawing.Size(218, 47);
-            this.uxLogout.TabIndex = 18;
-            this.uxLogout.Text = "Logout";
-            this.uxLogout.UseVisualStyleBackColor = true;
+            this.uxExit.ForeColor = System.Drawing.Color.Black;
+            this.uxExit.Location = new System.Drawing.Point(132, 487);
+            this.uxExit.Name = "uxExit";
+            this.uxExit.Size = new System.Drawing.Size(218, 47);
+            this.uxExit.TabIndex = 18;
+            this.uxExit.Text = "Exit";
+            this.uxExit.UseVisualStyleBackColor = true;
+            this.uxExit.Click += new System.EventHandler(this.uxExit_Click);
             // 
             // uxSubmit
             // 
+            this.uxSubmit.ForeColor = System.Drawing.Color.Black;
             this.uxSubmit.Location = new System.Drawing.Point(373, 487);
             this.uxSubmit.Name = "uxSubmit";
             this.uxSubmit.Size = new System.Drawing.Size(218, 47);
@@ -241,7 +252,7 @@
             this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(706, 546);
             this.Controls.Add(this.uxSubmit);
-            this.Controls.Add(this.uxLogout);
+            this.Controls.Add(this.uxExit);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -294,7 +305,7 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button uxLogout;
+        private System.Windows.Forms.Button uxExit;
         private System.Windows.Forms.Button uxSubmit;
     }
 }

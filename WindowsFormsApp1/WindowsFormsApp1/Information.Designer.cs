@@ -36,10 +36,10 @@
             System.Windows.Forms.Label unitManagerLabel;
             System.Windows.Forms.Label welderLabel;
             System.Windows.Forms.Label inspectorLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Information));
             System.Windows.Forms.Label iDLabel;
             System.Windows.Forms.Label welderSignatureLabel;
             System.Windows.Forms.Label inspectorSignatureLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Information));
             this.uxPhoto = new System.Windows.Forms.Button();
             this.uxExit = new System.Windows.Forms.Button();
             this.assignment23DataSet = new WindowsFormsApp1.Assignment23DataSet();
@@ -88,7 +88,7 @@
             // startDateLabel
             // 
             startDateLabel.AutoSize = true;
-            startDateLabel.Location = new System.Drawing.Point(97, 71);
+            startDateLabel.Location = new System.Drawing.Point(99, 78);
             startDateLabel.Name = "startDateLabel";
             startDateLabel.Size = new System.Drawing.Size(76, 17);
             startDateLabel.TabIndex = 3;
@@ -97,7 +97,7 @@
             // endDateLabel
             // 
             endDateLabel.AutoSize = true;
-            endDateLabel.Location = new System.Drawing.Point(102, 115);
+            endDateLabel.Location = new System.Drawing.Point(99, 115);
             endDateLabel.Name = "endDateLabel";
             endDateLabel.Size = new System.Drawing.Size(71, 17);
             endDateLabel.TabIndex = 5;
@@ -106,7 +106,7 @@
             // unitLabel
             // 
             unitLabel.AutoSize = true;
-            unitLabel.Location = new System.Drawing.Point(102, 157);
+            unitLabel.Location = new System.Drawing.Point(99, 157);
             unitLabel.Name = "unitLabel";
             unitLabel.Size = new System.Drawing.Size(37, 17);
             unitLabel.TabIndex = 7;
@@ -115,7 +115,7 @@
             // equipmentLabel
             // 
             equipmentLabel.AutoSize = true;
-            equipmentLabel.Location = new System.Drawing.Point(105, 207);
+            equipmentLabel.Location = new System.Drawing.Point(99, 207);
             equipmentLabel.Name = "equipmentLabel";
             equipmentLabel.Size = new System.Drawing.Size(79, 17);
             equipmentLabel.TabIndex = 9;
@@ -124,7 +124,7 @@
             // unitManagerLabel
             // 
             unitManagerLabel.AutoSize = true;
-            unitManagerLabel.Location = new System.Drawing.Point(110, 255);
+            unitManagerLabel.Location = new System.Drawing.Point(99, 255);
             unitManagerLabel.Name = "unitManagerLabel";
             unitManagerLabel.Size = new System.Drawing.Size(97, 17);
             unitManagerLabel.TabIndex = 11;
@@ -133,7 +133,7 @@
             // welderLabel
             // 
             welderLabel.AutoSize = true;
-            welderLabel.Location = new System.Drawing.Point(119, 305);
+            welderLabel.Location = new System.Drawing.Point(99, 305);
             welderLabel.Name = "welderLabel";
             welderLabel.Size = new System.Drawing.Size(57, 17);
             welderLabel.TabIndex = 13;
@@ -142,11 +142,38 @@
             // inspectorLabel
             // 
             inspectorLabel.AutoSize = true;
-            inspectorLabel.Location = new System.Drawing.Point(119, 350);
+            inspectorLabel.Location = new System.Drawing.Point(99, 348);
             inspectorLabel.Name = "inspectorLabel";
             inspectorLabel.Size = new System.Drawing.Size(70, 17);
             inspectorLabel.TabIndex = 15;
             inspectorLabel.Text = "Inspector:";
+            // 
+            // iDLabel
+            // 
+            iDLabel.AutoSize = true;
+            iDLabel.Location = new System.Drawing.Point(99, 42);
+            iDLabel.Name = "iDLabel";
+            iDLabel.Size = new System.Drawing.Size(25, 17);
+            iDLabel.TabIndex = 17;
+            iDLabel.Text = "ID:";
+            // 
+            // welderSignatureLabel
+            // 
+            welderSignatureLabel.AutoSize = true;
+            welderSignatureLabel.Location = new System.Drawing.Point(99, 392);
+            welderSignatureLabel.Name = "welderSignatureLabel";
+            welderSignatureLabel.Size = new System.Drawing.Size(122, 17);
+            welderSignatureLabel.TabIndex = 19;
+            welderSignatureLabel.Text = "Welder Signature:";
+            // 
+            // inspectorSignatureLabel
+            // 
+            inspectorSignatureLabel.AutoSize = true;
+            inspectorSignatureLabel.Location = new System.Drawing.Point(99, 431);
+            inspectorSignatureLabel.Name = "inspectorSignatureLabel";
+            inspectorSignatureLabel.Size = new System.Drawing.Size(135, 17);
+            inspectorSignatureLabel.TabIndex = 21;
+            inspectorSignatureLabel.Text = "Inspector Signature:";
             // 
             // uxPhoto
             // 
@@ -322,9 +349,9 @@
             // startDateDateTimePicker
             // 
             this.startDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.logsBindingSource, "StartDate", true));
-            this.startDateDateTimePicker.Location = new System.Drawing.Point(179, 67);
+            this.startDateDateTimePicker.Location = new System.Drawing.Point(178, 74);
             this.startDateDateTimePicker.Name = "startDateDateTimePicker";
-            this.startDateDateTimePicker.Size = new System.Drawing.Size(265, 22);
+            this.startDateDateTimePicker.Size = new System.Drawing.Size(372, 22);
             this.startDateDateTimePicker.TabIndex = 4;
             // 
             // endDateDateTimePicker
@@ -332,98 +359,71 @@
             this.endDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.logsBindingSource, "EndDate", true));
             this.endDateDateTimePicker.Location = new System.Drawing.Point(179, 111);
             this.endDateDateTimePicker.Name = "endDateDateTimePicker";
-            this.endDateDateTimePicker.Size = new System.Drawing.Size(265, 22);
+            this.endDateDateTimePicker.Size = new System.Drawing.Size(371, 22);
             this.endDateDateTimePicker.TabIndex = 6;
             // 
             // unitTextBox
             // 
             this.unitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Unit", true));
-            this.unitTextBox.Location = new System.Drawing.Point(145, 154);
+            this.unitTextBox.Location = new System.Drawing.Point(137, 154);
             this.unitTextBox.Name = "unitTextBox";
-            this.unitTextBox.Size = new System.Drawing.Size(405, 22);
+            this.unitTextBox.Size = new System.Drawing.Size(413, 22);
             this.unitTextBox.TabIndex = 8;
             // 
             // equipmentTextBox
             // 
             this.equipmentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Equipment", true));
-            this.equipmentTextBox.Location = new System.Drawing.Point(190, 204);
+            this.equipmentTextBox.Location = new System.Drawing.Point(180, 204);
             this.equipmentTextBox.Name = "equipmentTextBox";
-            this.equipmentTextBox.Size = new System.Drawing.Size(100, 22);
+            this.equipmentTextBox.Size = new System.Drawing.Size(370, 22);
             this.equipmentTextBox.TabIndex = 10;
             // 
             // unitManagerTextBox
             // 
             this.unitManagerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "UnitManager", true));
-            this.unitManagerTextBox.Location = new System.Drawing.Point(213, 252);
+            this.unitManagerTextBox.Location = new System.Drawing.Point(197, 252);
             this.unitManagerTextBox.Name = "unitManagerTextBox";
-            this.unitManagerTextBox.Size = new System.Drawing.Size(100, 22);
+            this.unitManagerTextBox.Size = new System.Drawing.Size(353, 22);
             this.unitManagerTextBox.TabIndex = 12;
             // 
             // welderTextBox
             // 
             this.welderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Welder", true));
-            this.welderTextBox.Location = new System.Drawing.Point(182, 302);
+            this.welderTextBox.Location = new System.Drawing.Point(158, 302);
             this.welderTextBox.Name = "welderTextBox";
-            this.welderTextBox.Size = new System.Drawing.Size(100, 22);
+            this.welderTextBox.Size = new System.Drawing.Size(392, 22);
             this.welderTextBox.TabIndex = 14;
             // 
             // inspectorTextBox
             // 
             this.inspectorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Inspector", true));
-            this.inspectorTextBox.Location = new System.Drawing.Point(195, 347);
+            this.inspectorTextBox.Location = new System.Drawing.Point(172, 345);
             this.inspectorTextBox.Name = "inspectorTextBox";
-            this.inspectorTextBox.Size = new System.Drawing.Size(100, 22);
+            this.inspectorTextBox.Size = new System.Drawing.Size(378, 22);
             this.inspectorTextBox.TabIndex = 16;
-            // 
-            // iDLabel
-            // 
-            iDLabel.AutoSize = true;
-            iDLabel.Location = new System.Drawing.Point(102, 42);
-            iDLabel.Name = "iDLabel";
-            iDLabel.Size = new System.Drawing.Size(25, 17);
-            iDLabel.TabIndex = 17;
-            iDLabel.Text = "ID:";
             // 
             // iDTextBox
             // 
             this.iDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "ID", true));
-            this.iDTextBox.Location = new System.Drawing.Point(133, 39);
+            this.iDTextBox.Location = new System.Drawing.Point(126, 39);
             this.iDTextBox.Name = "iDTextBox";
-            this.iDTextBox.Size = new System.Drawing.Size(311, 22);
+            this.iDTextBox.Size = new System.Drawing.Size(424, 22);
             this.iDTextBox.TabIndex = 18;
-            // 
-            // welderSignatureLabel
-            // 
-            welderSignatureLabel.AutoSize = true;
-            welderSignatureLabel.Location = new System.Drawing.Point(133, 386);
-            welderSignatureLabel.Name = "welderSignatureLabel";
-            welderSignatureLabel.Size = new System.Drawing.Size(122, 17);
-            welderSignatureLabel.TabIndex = 19;
-            welderSignatureLabel.Text = "Welder Signature:";
             // 
             // welderSignatureTextBox
             // 
             this.welderSignatureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "WelderSignature", true));
-            this.welderSignatureTextBox.Location = new System.Drawing.Point(261, 383);
+            this.welderSignatureTextBox.Location = new System.Drawing.Point(222, 389);
             this.welderSignatureTextBox.Name = "welderSignatureTextBox";
-            this.welderSignatureTextBox.Size = new System.Drawing.Size(100, 22);
+            this.welderSignatureTextBox.Size = new System.Drawing.Size(328, 22);
             this.welderSignatureTextBox.TabIndex = 20;
-            // 
-            // inspectorSignatureLabel
-            // 
-            inspectorSignatureLabel.AutoSize = true;
-            inspectorSignatureLabel.Location = new System.Drawing.Point(138, 431);
-            inspectorSignatureLabel.Name = "inspectorSignatureLabel";
-            inspectorSignatureLabel.Size = new System.Drawing.Size(135, 17);
-            inspectorSignatureLabel.TabIndex = 21;
-            inspectorSignatureLabel.Text = "Inspector Signature:";
             // 
             // inspectorSignatureTextBox
             // 
             this.inspectorSignatureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "InspectorSignature", true));
-            this.inspectorSignatureTextBox.Location = new System.Drawing.Point(279, 428);
+            this.inspectorSignatureTextBox.Location = new System.Drawing.Point(236, 428);
             this.inspectorSignatureTextBox.Name = "inspectorSignatureTextBox";
-            this.inspectorSignatureTextBox.Size = new System.Drawing.Size(100, 22);
+            this.inspectorSignatureTextBox.Size = new System.Drawing.Size(314, 22);
             this.inspectorSignatureTextBox.TabIndex = 22;
             // 
             // Information

@@ -101,7 +101,7 @@
             // uxLogin
             // 
             this.uxLogin.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxLogin.Location = new System.Drawing.Point(207, 354);
+            this.uxLogin.Location = new System.Drawing.Point(495, 354);
             this.uxLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxLogin.Name = "uxLogin";
             this.uxLogin.Size = new System.Drawing.Size(173, 64);
@@ -113,7 +113,7 @@
             // uxExit
             // 
             this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExit.Location = new System.Drawing.Point(487, 354);
+            this.uxExit.Location = new System.Drawing.Point(214, 354);
             this.uxExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxExit.Name = "uxExit";
             this.uxExit.Size = new System.Drawing.Size(173, 64);

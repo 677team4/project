@@ -37,7 +37,7 @@
             // uxJob
             // 
             this.uxJob.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxJob.Location = new System.Drawing.Point(416, 212);
+            this.uxJob.Location = new System.Drawing.Point(288, 212);
             this.uxJob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxJob.Name = "uxJob";
             this.uxJob.Size = new System.Drawing.Size(173, 69);
@@ -49,7 +49,7 @@
             // uxAdd
             // 
             this.uxAdd.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxAdd.Location = new System.Drawing.Point(212, 212);
+            this.uxAdd.Location = new System.Drawing.Point(84, 212);
             this.uxAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxAdd.Name = "uxAdd";
             this.uxAdd.Size = new System.Drawing.Size(173, 69);
@@ -61,7 +61,7 @@
             // uxLogout
             // 
             this.uxLogout.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxLogout.Location = new System.Drawing.Point(316, 318);
+            this.uxLogout.Location = new System.Drawing.Point(188, 318);
             this.uxLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxLogout.Name = "uxLogout";
             this.uxLogout.Size = new System.Drawing.Size(173, 69);
@@ -74,7 +74,7 @@
             // 
             this.uxAdmin.AutoSize = true;
             this.uxAdmin.Font = new System.Drawing.Font("Myanmar Text", 41.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxAdmin.Location = new System.Drawing.Point(224, 63);
+            this.uxAdmin.Location = new System.Drawing.Point(135, 63);
             this.uxAdmin.Name = "uxAdmin";
             this.uxAdmin.Size = new System.Drawing.Size(269, 123);
             this.uxAdmin.TabIndex = 9;
@@ -84,7 +84,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.MediumPurple;
+            this.ClientSize = new System.Drawing.Size(522, 450);
             this.Controls.Add(this.uxJob);
             this.Controls.Add(this.uxAdd);
             this.Controls.Add(this.uxLogout);
