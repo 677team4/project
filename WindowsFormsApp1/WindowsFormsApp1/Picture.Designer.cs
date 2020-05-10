@@ -40,9 +40,11 @@
             // 
             // uxSave
             // 
-            this.uxSave.Location = new System.Drawing.Point(538, 62);
+            this.uxSave.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxSave.Location = new System.Drawing.Point(404, 58);
+            this.uxSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxSave.Name = "uxSave";
-            this.uxSave.Size = new System.Drawing.Size(250, 44);
+            this.uxSave.Size = new System.Drawing.Size(188, 39);
             this.uxSave.TabIndex = 1;
             this.uxSave.Text = "Save";
             this.uxSave.UseVisualStyleBackColor = true;
@@ -51,9 +53,10 @@
             // pictureBox
             // 
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(519, 225);
+            this.pictureBox.Size = new System.Drawing.Size(390, 184);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 5;
             this.pictureBox.TabStop = false;
@@ -61,26 +64,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 245);
+            this.label1.Location = new System.Drawing.Point(10, 199);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "File name:";
             // 
             // uxFileName
             // 
             this.uxFileName.AutoSize = true;
-            this.uxFileName.Location = new System.Drawing.Point(89, 245);
+            this.uxFileName.Location = new System.Drawing.Point(67, 199);
+            this.uxFileName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxFileName.Name = "uxFileName";
-            this.uxFileName.Size = new System.Drawing.Size(16, 17);
+            this.uxFileName.Size = new System.Drawing.Size(13, 13);
             this.uxFileName.TabIndex = 7;
             this.uxFileName.Text = "?";
             // 
             // uxOpen
             // 
-            this.uxOpen.Location = new System.Drawing.Point(538, 12);
+            this.uxOpen.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxOpen.Location = new System.Drawing.Point(404, 10);
+            this.uxOpen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxOpen.Name = "uxOpen";
-            this.uxOpen.Size = new System.Drawing.Size(250, 44);
+            this.uxOpen.Size = new System.Drawing.Size(188, 39);
             this.uxOpen.TabIndex = 9;
             this.uxOpen.Text = "Open";
             this.uxOpen.UseVisualStyleBackColor = true;
@@ -88,9 +95,11 @@
             // 
             // uxExit
             // 
-            this.uxExit.Location = new System.Drawing.Point(538, 162);
+            this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxExit.Location = new System.Drawing.Point(404, 154);
+            this.uxExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(250, 44);
+            this.uxExit.Size = new System.Drawing.Size(188, 39);
             this.uxExit.TabIndex = 10;
             this.uxExit.Text = "Exit";
             this.uxExit.UseVisualStyleBackColor = true;
@@ -98,9 +107,11 @@
             // 
             // uxPic
             // 
-            this.uxPic.Location = new System.Drawing.Point(538, 112);
+            this.uxPic.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxPic.Location = new System.Drawing.Point(404, 106);
+            this.uxPic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxPic.Name = "uxPic";
-            this.uxPic.Size = new System.Drawing.Size(250, 44);
+            this.uxPic.Size = new System.Drawing.Size(188, 39);
             this.uxPic.TabIndex = 11;
             this.uxPic.Text = "Picture on file";
             this.uxPic.UseVisualStyleBackColor = true;
@@ -108,10 +119,10 @@
             // 
             // Picture
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(800, 295);
+            this.ClientSize = new System.Drawing.Size(600, 240);
             this.Controls.Add(this.uxPic);
             this.Controls.Add(this.uxExit);
             this.Controls.Add(this.uxOpen);
@@ -119,6 +130,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.uxSave);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Picture";
             this.Text = "Picture";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();

@@ -39,9 +39,6 @@
             this.logsTableAdapter1 = new WindowsFormsApp1.Assignment23DataSetTableAdapters.LogsTableAdapter();
             this.tableAdapterManager1 = new WindowsFormsApp1.Assignment23DataSetTableAdapters.TableAdapterManager();
             this.logsDataGridView = new System.Windows.Forms.DataGridView();
-            this.logsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.assignment23DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.logsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.endDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,14 +51,17 @@
             this.inspectorSignatureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.notesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.logsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.logsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.assignment23DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.projectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // projectDataSet
@@ -88,10 +88,9 @@
             // uxExit
             // 
             this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExit.Location = new System.Drawing.Point(660, 496);
-            this.uxExit.Margin = new System.Windows.Forms.Padding(4);
+            this.uxExit.Location = new System.Drawing.Point(539, 403);
             this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(197, 87);
+            this.uxExit.Size = new System.Drawing.Size(148, 71);
             this.uxExit.TabIndex = 2;
             this.uxExit.Text = "Exit";
             this.uxExit.UseVisualStyleBackColor = true;
@@ -138,26 +137,10 @@
             this.iDDataGridViewTextBoxColumn});
             this.logsDataGridView.DataSource = this.logsBindingSource3;
             this.logsDataGridView.Location = new System.Drawing.Point(2, 1);
-            this.logsDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.logsDataGridView.Name = "logsDataGridView";
             this.logsDataGridView.RowHeadersWidth = 51;
-            this.logsDataGridView.Size = new System.Drawing.Size(1629, 464);
+            this.logsDataGridView.Size = new System.Drawing.Size(1222, 377);
             this.logsDataGridView.TabIndex = 2;
-            // 
-            // logsBindingSource2
-            // 
-            this.logsBindingSource2.DataMember = "Logs";
-            this.logsBindingSource2.DataSource = this.assignment23DataSet;
-            // 
-            // assignment23DataSetBindingSource
-            // 
-            this.assignment23DataSetBindingSource.DataSource = this.assignment23DataSet;
-            this.assignment23DataSetBindingSource.Position = 0;
-            // 
-            // logsBindingSource3
-            // 
-            this.logsBindingSource3.DataMember = "Logs";
-            this.logsBindingSource3.DataSource = this.assignment23DataSet;
             // 
             // startDateDataGridViewTextBoxColumn
             // 
@@ -255,15 +238,29 @@
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.Width = 125;
             // 
+            // logsBindingSource3
+            // 
+            this.logsBindingSource3.DataMember = "Logs";
+            this.logsBindingSource3.DataSource = this.assignment23DataSet;
+            // 
+            // logsBindingSource2
+            // 
+            this.logsBindingSource2.DataMember = "Logs";
+            this.logsBindingSource2.DataSource = this.assignment23DataSet;
+            // 
+            // assignment23DataSetBindingSource
+            // 
+            this.assignment23DataSetBindingSource.DataSource = this.assignment23DataSet;
+            this.assignment23DataSetBindingSource.Position = 0;
+            // 
             // Logs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(1728, 614);
+            this.ClientSize = new System.Drawing.Size(1226, 499);
             this.Controls.Add(this.logsDataGridView);
             this.Controls.Add(this.uxExit);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Logs";
             this.Text = "Logs";
             this.Load += new System.EventHandler(this.Logs_Load);
@@ -272,9 +269,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignment23DataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }

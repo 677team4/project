@@ -41,41 +41,49 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(311, 214);
+            this.textBox2.Location = new System.Drawing.Point(247, 172);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(321, 22);
+            this.textBox2.Size = new System.Drawing.Size(242, 20);
             this.textBox2.TabIndex = 13;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(170, 214);
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(119, 171);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 17);
+            this.label2.Size = new System.Drawing.Size(124, 19);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Welder Signature";
+            this.label2.Text = "Welder Signature:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(311, 254);
+            this.textBox1.Location = new System.Drawing.Point(247, 205);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(321, 22);
+            this.textBox1.Size = new System.Drawing.Size(242, 20);
             this.textBox1.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(170, 254);
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(105, 205);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 17);
+            this.label1.Size = new System.Drawing.Size(138, 19);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Inspector Signature";
+            this.label1.Text = "Inspector Signature:";
             // 
             // uxSubmit
             // 
-            this.uxSubmit.Location = new System.Drawing.Point(414, 327);
+            this.uxSubmit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxSubmit.Location = new System.Drawing.Point(166, 269);
+            this.uxSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.uxSubmit.Name = "uxSubmit";
-            this.uxSubmit.Size = new System.Drawing.Size(218, 47);
+            this.uxSubmit.Size = new System.Drawing.Size(130, 55);
             this.uxSubmit.TabIndex = 21;
             this.uxSubmit.Text = "Submit";
             this.uxSubmit.UseVisualStyleBackColor = true;
@@ -83,9 +91,11 @@
             // 
             // uxLogout
             // 
-            this.uxLogout.Location = new System.Drawing.Point(173, 327);
+            this.uxLogout.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxLogout.Location = new System.Drawing.Point(326, 269);
+            this.uxLogout.Margin = new System.Windows.Forms.Padding(2);
             this.uxLogout.Name = "uxLogout";
-            this.uxLogout.Size = new System.Drawing.Size(218, 47);
+            this.uxLogout.Size = new System.Drawing.Size(130, 55);
             this.uxLogout.TabIndex = 20;
             this.uxLogout.Text = "Exit";
             this.uxLogout.UseVisualStyleBackColor = true;
@@ -93,36 +103,40 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(311, 173);
+            this.textBox3.Location = new System.Drawing.Point(247, 139);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(321, 22);
+            this.textBox3.Size = new System.Drawing.Size(242, 20);
             this.textBox3.TabIndex = 23;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(170, 173);
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(216, 140);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 17);
+            this.label3.Size = new System.Drawing.Size(27, 19);
             this.label3.TabIndex = 22;
-            this.label3.Text = "ID";
+            this.label3.Text = "ID:";
             // 
             // uxInspector
             // 
             this.uxInspector.AutoSize = true;
             this.uxInspector.Font = new System.Drawing.Font("Myanmar Text", 41.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxInspector.Location = new System.Drawing.Point(99, 20);
+            this.uxInspector.Location = new System.Drawing.Point(56, 40);
+            this.uxInspector.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxInspector.Name = "uxInspector";
-            this.uxInspector.Size = new System.Drawing.Size(611, 123);
+            this.uxInspector.Size = new System.Drawing.Size(489, 97);
             this.uxInspector.TabIndex = 24;
             this.uxInspector.Text = "Complete Project";
             // 
             // Signature
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.uxInspector);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
@@ -132,8 +146,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Signature";
-            this.Text = "Form1";
+            this.Text = "Complete Project";
             this.Load += new System.EventHandler(this.Signature_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();

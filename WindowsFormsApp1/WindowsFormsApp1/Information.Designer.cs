@@ -88,100 +88,119 @@
             // startDateLabel
             // 
             startDateLabel.AutoSize = true;
-            startDateLabel.Location = new System.Drawing.Point(99, 78);
+            startDateLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            startDateLabel.Location = new System.Drawing.Point(74, 72);
+            startDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             startDateLabel.Name = "startDateLabel";
-            startDateLabel.Size = new System.Drawing.Size(76, 17);
+            startDateLabel.Size = new System.Drawing.Size(64, 15);
             startDateLabel.TabIndex = 3;
             startDateLabel.Text = "Start Date:";
             // 
             // endDateLabel
             // 
             endDateLabel.AutoSize = true;
-            endDateLabel.Location = new System.Drawing.Point(99, 115);
+            endDateLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            endDateLabel.Location = new System.Drawing.Point(80, 104);
+            endDateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             endDateLabel.Name = "endDateLabel";
-            endDateLabel.Size = new System.Drawing.Size(71, 17);
+            endDateLabel.Size = new System.Drawing.Size(58, 15);
             endDateLabel.TabIndex = 5;
             endDateLabel.Text = "End Date:";
             // 
             // unitLabel
             // 
             unitLabel.AutoSize = true;
-            unitLabel.Location = new System.Drawing.Point(99, 157);
+            unitLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            unitLabel.Location = new System.Drawing.Point(105, 136);
+            unitLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             unitLabel.Name = "unitLabel";
-            unitLabel.Size = new System.Drawing.Size(37, 17);
+            unitLabel.Size = new System.Drawing.Size(33, 15);
             unitLabel.TabIndex = 7;
             unitLabel.Text = "Unit:";
             // 
             // equipmentLabel
             // 
             equipmentLabel.AutoSize = true;
-            equipmentLabel.Location = new System.Drawing.Point(99, 207);
+            equipmentLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            equipmentLabel.Location = new System.Drawing.Point(70, 168);
+            equipmentLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             equipmentLabel.Name = "equipmentLabel";
-            equipmentLabel.Size = new System.Drawing.Size(79, 17);
+            equipmentLabel.Size = new System.Drawing.Size(68, 15);
             equipmentLabel.TabIndex = 9;
             equipmentLabel.Text = "Equipment:";
             // 
             // unitManagerLabel
             // 
             unitManagerLabel.AutoSize = true;
-            unitManagerLabel.Location = new System.Drawing.Point(99, 255);
+            unitManagerLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            unitManagerLabel.Location = new System.Drawing.Point(53, 200);
+            unitManagerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             unitManagerLabel.Name = "unitManagerLabel";
-            unitManagerLabel.Size = new System.Drawing.Size(97, 17);
+            unitManagerLabel.Size = new System.Drawing.Size(85, 15);
             unitManagerLabel.TabIndex = 11;
             unitManagerLabel.Text = "Unit Manager:";
             // 
             // welderLabel
             // 
             welderLabel.AutoSize = true;
-            welderLabel.Location = new System.Drawing.Point(99, 305);
+            welderLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            welderLabel.Location = new System.Drawing.Point(88, 232);
+            welderLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             welderLabel.Name = "welderLabel";
-            welderLabel.Size = new System.Drawing.Size(57, 17);
+            welderLabel.Size = new System.Drawing.Size(50, 15);
             welderLabel.TabIndex = 13;
             welderLabel.Text = "Welder:";
             // 
             // inspectorLabel
             // 
             inspectorLabel.AutoSize = true;
-            inspectorLabel.Location = new System.Drawing.Point(99, 348);
+            inspectorLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            inspectorLabel.Location = new System.Drawing.Point(76, 264);
+            inspectorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             inspectorLabel.Name = "inspectorLabel";
-            inspectorLabel.Size = new System.Drawing.Size(70, 17);
+            inspectorLabel.Size = new System.Drawing.Size(62, 15);
             inspectorLabel.TabIndex = 15;
             inspectorLabel.Text = "Inspector:";
             // 
             // iDLabel
             // 
             iDLabel.AutoSize = true;
-            iDLabel.Location = new System.Drawing.Point(99, 42);
+            iDLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            iDLabel.Location = new System.Drawing.Point(116, 40);
+            iDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             iDLabel.Name = "iDLabel";
-            iDLabel.Size = new System.Drawing.Size(25, 17);
+            iDLabel.Size = new System.Drawing.Size(22, 15);
             iDLabel.TabIndex = 17;
             iDLabel.Text = "ID:";
             // 
             // welderSignatureLabel
             // 
             welderSignatureLabel.AutoSize = true;
-            welderSignatureLabel.Location = new System.Drawing.Point(99, 392);
+            welderSignatureLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            welderSignatureLabel.Location = new System.Drawing.Point(33, 296);
+            welderSignatureLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             welderSignatureLabel.Name = "welderSignatureLabel";
-            welderSignatureLabel.Size = new System.Drawing.Size(122, 17);
+            welderSignatureLabel.Size = new System.Drawing.Size(105, 15);
             welderSignatureLabel.TabIndex = 19;
             welderSignatureLabel.Text = "Welder Signature:";
             // 
             // inspectorSignatureLabel
             // 
             inspectorSignatureLabel.AutoSize = true;
-            inspectorSignatureLabel.Location = new System.Drawing.Point(99, 431);
+            inspectorSignatureLabel.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            inspectorSignatureLabel.Location = new System.Drawing.Point(21, 328);
+            inspectorSignatureLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             inspectorSignatureLabel.Name = "inspectorSignatureLabel";
-            inspectorSignatureLabel.Size = new System.Drawing.Size(135, 17);
+            inspectorSignatureLabel.Size = new System.Drawing.Size(117, 15);
             inspectorSignatureLabel.TabIndex = 21;
             inspectorSignatureLabel.Text = "Inspector Signature:";
             // 
             // uxPhoto
             // 
             this.uxPhoto.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPhoto.Location = new System.Drawing.Point(382, 472);
-            this.uxPhoto.Margin = new System.Windows.Forms.Padding(4);
+            this.uxPhoto.Location = new System.Drawing.Point(64, 392);
             this.uxPhoto.Name = "uxPhoto";
-            this.uxPhoto.Size = new System.Drawing.Size(168, 63);
+            this.uxPhoto.Size = new System.Drawing.Size(126, 51);
             this.uxPhoto.TabIndex = 0;
             this.uxPhoto.Text = "Photo";
             this.uxPhoto.UseVisualStyleBackColor = true;
@@ -190,10 +209,9 @@
             // uxExit
             // 
             this.uxExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxExit.Location = new System.Drawing.Point(94, 472);
-            this.uxExit.Margin = new System.Windows.Forms.Padding(4);
+            this.uxExit.Location = new System.Drawing.Point(222, 392);
             this.uxExit.Name = "uxExit";
-            this.uxExit.Size = new System.Drawing.Size(168, 63);
+            this.uxExit.Size = new System.Drawing.Size(126, 51);
             this.uxExit.TabIndex = 1;
             this.uxExit.Text = "Exit";
             this.uxExit.UseVisualStyleBackColor = true;
@@ -248,7 +266,7 @@
             this.logsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.logsBindingNavigator.Name = "logsBindingNavigator";
             this.logsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.logsBindingNavigator.Size = new System.Drawing.Size(675, 27);
+            this.logsBindingNavigator.Size = new System.Drawing.Size(412, 27);
             this.logsBindingNavigator.TabIndex = 2;
             this.logsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -258,13 +276,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -274,7 +292,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -283,7 +301,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -292,7 +310,7 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -304,8 +322,9 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -320,7 +339,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -329,7 +348,7 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -342,96 +361,106 @@
             this.logsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.logsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("logsBindingNavigatorSaveItem.Image")));
             this.logsBindingNavigatorSaveItem.Name = "logsBindingNavigatorSaveItem";
-            this.logsBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.logsBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.logsBindingNavigatorSaveItem.Text = "Save Data";
             this.logsBindingNavigatorSaveItem.Click += new System.EventHandler(this.logsBindingNavigatorSaveItem_Click);
             // 
             // startDateDateTimePicker
             // 
             this.startDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.logsBindingSource, "StartDate", true));
-            this.startDateDateTimePicker.Location = new System.Drawing.Point(178, 74);
+            this.startDateDateTimePicker.Location = new System.Drawing.Point(143, 70);
+            this.startDateDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.startDateDateTimePicker.Name = "startDateDateTimePicker";
-            this.startDateDateTimePicker.Size = new System.Drawing.Size(372, 22);
+            this.startDateDateTimePicker.Size = new System.Drawing.Size(215, 20);
             this.startDateDateTimePicker.TabIndex = 4;
             // 
             // endDateDateTimePicker
             // 
             this.endDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.logsBindingSource, "EndDate", true));
-            this.endDateDateTimePicker.Location = new System.Drawing.Point(179, 111);
+            this.endDateDateTimePicker.Location = new System.Drawing.Point(143, 102);
+            this.endDateDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.endDateDateTimePicker.Name = "endDateDateTimePicker";
-            this.endDateDateTimePicker.Size = new System.Drawing.Size(371, 22);
+            this.endDateDateTimePicker.Size = new System.Drawing.Size(215, 20);
             this.endDateDateTimePicker.TabIndex = 6;
             // 
             // unitTextBox
             // 
             this.unitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Unit", true));
-            this.unitTextBox.Location = new System.Drawing.Point(137, 154);
+            this.unitTextBox.Location = new System.Drawing.Point(143, 134);
+            this.unitTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.unitTextBox.Name = "unitTextBox";
-            this.unitTextBox.Size = new System.Drawing.Size(413, 22);
+            this.unitTextBox.Size = new System.Drawing.Size(215, 20);
             this.unitTextBox.TabIndex = 8;
             // 
             // equipmentTextBox
             // 
             this.equipmentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Equipment", true));
-            this.equipmentTextBox.Location = new System.Drawing.Point(180, 204);
+            this.equipmentTextBox.Location = new System.Drawing.Point(143, 166);
+            this.equipmentTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.equipmentTextBox.Name = "equipmentTextBox";
-            this.equipmentTextBox.Size = new System.Drawing.Size(370, 22);
+            this.equipmentTextBox.Size = new System.Drawing.Size(215, 20);
             this.equipmentTextBox.TabIndex = 10;
             // 
             // unitManagerTextBox
             // 
             this.unitManagerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "UnitManager", true));
-            this.unitManagerTextBox.Location = new System.Drawing.Point(197, 252);
+            this.unitManagerTextBox.Location = new System.Drawing.Point(143, 198);
+            this.unitManagerTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.unitManagerTextBox.Name = "unitManagerTextBox";
-            this.unitManagerTextBox.Size = new System.Drawing.Size(353, 22);
+            this.unitManagerTextBox.Size = new System.Drawing.Size(215, 20);
             this.unitManagerTextBox.TabIndex = 12;
             // 
             // welderTextBox
             // 
             this.welderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Welder", true));
-            this.welderTextBox.Location = new System.Drawing.Point(158, 302);
+            this.welderTextBox.Location = new System.Drawing.Point(142, 230);
+            this.welderTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.welderTextBox.Name = "welderTextBox";
-            this.welderTextBox.Size = new System.Drawing.Size(392, 22);
+            this.welderTextBox.Size = new System.Drawing.Size(215, 20);
             this.welderTextBox.TabIndex = 14;
             // 
             // inspectorTextBox
             // 
             this.inspectorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "Inspector", true));
-            this.inspectorTextBox.Location = new System.Drawing.Point(172, 345);
+            this.inspectorTextBox.Location = new System.Drawing.Point(142, 262);
+            this.inspectorTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.inspectorTextBox.Name = "inspectorTextBox";
-            this.inspectorTextBox.Size = new System.Drawing.Size(378, 22);
+            this.inspectorTextBox.Size = new System.Drawing.Size(215, 20);
             this.inspectorTextBox.TabIndex = 16;
             // 
             // iDTextBox
             // 
             this.iDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "ID", true));
-            this.iDTextBox.Location = new System.Drawing.Point(126, 39);
+            this.iDTextBox.Location = new System.Drawing.Point(143, 38);
+            this.iDTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.iDTextBox.Name = "iDTextBox";
-            this.iDTextBox.Size = new System.Drawing.Size(424, 22);
+            this.iDTextBox.Size = new System.Drawing.Size(215, 20);
             this.iDTextBox.TabIndex = 18;
             // 
             // welderSignatureTextBox
             // 
             this.welderSignatureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "WelderSignature", true));
-            this.welderSignatureTextBox.Location = new System.Drawing.Point(222, 389);
+            this.welderSignatureTextBox.Location = new System.Drawing.Point(142, 294);
+            this.welderSignatureTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.welderSignatureTextBox.Name = "welderSignatureTextBox";
-            this.welderSignatureTextBox.Size = new System.Drawing.Size(328, 22);
+            this.welderSignatureTextBox.Size = new System.Drawing.Size(215, 20);
             this.welderSignatureTextBox.TabIndex = 20;
             // 
             // inspectorSignatureTextBox
             // 
             this.inspectorSignatureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.logsBindingSource, "InspectorSignature", true));
-            this.inspectorSignatureTextBox.Location = new System.Drawing.Point(236, 428);
+            this.inspectorSignatureTextBox.Location = new System.Drawing.Point(142, 326);
+            this.inspectorSignatureTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.inspectorSignatureTextBox.Name = "inspectorSignatureTextBox";
-            this.inspectorSignatureTextBox.Size = new System.Drawing.Size(314, 22);
+            this.inspectorSignatureTextBox.Size = new System.Drawing.Size(215, 20);
             this.inspectorSignatureTextBox.TabIndex = 22;
             // 
             // Information
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(675, 566);
+            this.ClientSize = new System.Drawing.Size(412, 460);
             this.Controls.Add(inspectorSignatureLabel);
             this.Controls.Add(this.inspectorSignatureTextBox);
             this.Controls.Add(welderSignatureLabel);
@@ -455,7 +484,6 @@
             this.Controls.Add(this.logsBindingNavigator);
             this.Controls.Add(this.uxExit);
             this.Controls.Add(this.uxPhoto);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Information";
             this.Text = "Information";
             this.Load += new System.EventHandler(this.Information_Load);

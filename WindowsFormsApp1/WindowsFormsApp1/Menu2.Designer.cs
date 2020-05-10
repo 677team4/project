@@ -38,19 +38,20 @@
             // 
             this.uxWelder.AutoSize = true;
             this.uxWelder.Font = new System.Drawing.Font("Myanmar Text", 41.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxWelder.Location = new System.Drawing.Point(131, 33);
+            this.uxWelder.Location = new System.Drawing.Point(98, 27);
+            this.uxWelder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxWelder.Name = "uxWelder";
-            this.uxWelder.Size = new System.Drawing.Size(285, 123);
+            this.uxWelder.Size = new System.Drawing.Size(229, 97);
             this.uxWelder.TabIndex = 2;
             this.uxWelder.Text = "Welder";
             // 
             // uxLogout
             // 
             this.uxLogout.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxLogout.Location = new System.Drawing.Point(192, 284);
-            this.uxLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxLogout.Location = new System.Drawing.Point(144, 236);
+            this.uxLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxLogout.Name = "uxLogout";
-            this.uxLogout.Size = new System.Drawing.Size(173, 69);
+            this.uxLogout.Size = new System.Drawing.Size(130, 56);
             this.uxLogout.TabIndex = 3;
             this.uxLogout.Text = "Logout";
             this.uxLogout.UseVisualStyleBackColor = true;
@@ -59,10 +60,10 @@
             // uxView
             // 
             this.uxView.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxView.Location = new System.Drawing.Point(88, 183);
-            this.uxView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxView.Location = new System.Drawing.Point(66, 149);
+            this.uxView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxView.Name = "uxView";
-            this.uxView.Size = new System.Drawing.Size(173, 69);
+            this.uxView.Size = new System.Drawing.Size(130, 56);
             this.uxView.TabIndex = 5;
             this.uxView.Text = "View Information";
             this.uxView.UseVisualStyleBackColor = true;
@@ -71,10 +72,10 @@
             // uxJob
             // 
             this.uxJob.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxJob.Location = new System.Drawing.Point(291, 183);
-            this.uxJob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxJob.Location = new System.Drawing.Point(218, 149);
+            this.uxJob.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxJob.Name = "uxJob";
-            this.uxJob.Size = new System.Drawing.Size(173, 69);
+            this.uxJob.Size = new System.Drawing.Size(130, 56);
             this.uxJob.TabIndex = 6;
             this.uxJob.Text = "Complete Job";
             this.uxJob.UseVisualStyleBackColor = true;
@@ -82,15 +83,15 @@
             // 
             // Menu2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
-            this.ClientSize = new System.Drawing.Size(565, 408);
+            this.ClientSize = new System.Drawing.Size(424, 332);
             this.Controls.Add(this.uxJob);
             this.Controls.Add(this.uxView);
             this.Controls.Add(this.uxLogout);
             this.Controls.Add(this.uxWelder);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Menu2";
             this.Text = "Welder Menu";
             this.Load += new System.EventHandler(this.Menu2_Load);
